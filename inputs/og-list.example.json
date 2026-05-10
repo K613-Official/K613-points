@@ -1,0 +1,23 @@
+{
+  "weekNumber": 1,
+  "bonuses": [
+    {
+      "address": "0x1111111111111111111111111111111111111111",
+      "amount": "1000000000000000000000",
+      "kind": "og",
+      "note": "OG holder snapshot 2026-04-01"
+    },
+    {
+      "address": "0x2222222222222222222222222222222222222222",
+      "amount": "500000000000000000000",
+      "kind": "social",
+      "note": "Twitter quest winner"
+    },
+    {
+      "address": "0x3333333333333333333333333333333333333333",
+      "amount": "2500000000000000000000",
+      "kind": "contributor",
+      "note": "Subgraph indexer dev"
+    }
+  ]
+}

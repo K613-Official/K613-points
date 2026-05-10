@@ -1,0 +1,46 @@
+{
+  "name": "k613-points-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Off-chain pipeline for K613 Points Campaign Season 1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "snapshot": "tsx src/commands/snapshot.ts",
+    "build-tree": "tsx src/commands/build-tree.ts",
+    "dry-run": "tsx src/commands/dry-run.ts",
+    "post-root": "tsx src/commands/post-root.ts",
+    "verify": "tsx src/commands/verify.ts",
+    "export-proofs": "tsx src/commands/export-proofs.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@openzeppelin/merkle-tree": "1.0.7",
+    "commander": "12.1.0",
+    "dotenv": "16.4.5",
+    "envalid": "8.1.1",
+    "graphql": "16.9.0",
+    "graphql-request": "7.1.2",
+    "pino": "9.5.0",
+    "viem": "2.21.45",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@typescript-eslint/eslint-plugin": "8.13.0",
+    "@typescript-eslint/parser": "8.13.0",
+    "eslint": "9.14.0",
+    "pino-pretty": "11.3.0",
+    "prettier": "3.3.3",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.13.0",
+    "vitest": "2.1.5"
+  }
+}
