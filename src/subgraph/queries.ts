@@ -37,10 +37,7 @@ export const USERS_WITH_BALANCE_QUERY = gql`
     userReserves(
       first: $first
       skip: $skip
-      where: {
-        liquidityRate_gte: 0
-        reserve_: { lastUpdateTimestamp_lte: $endTimestamp }
-      }
+      where: { liquidityRate_gte: 0, reserve_: { lastUpdateTimestamp_lte: $endTimestamp } }
     ) {
       id
       user {
@@ -67,11 +64,7 @@ export const USERS_WITH_BALANCE_QUERY = gql`
  * creating history items for both sender and receiver at transfer block.
  */
 export const ATOKEN_HISTORY_QUERY = gql`
-  query ATokenHistory(
-    $userReserve: String!
-    $startTimestamp: Int!
-    $endTimestamp: Int!
-  ) {
+  query ATokenHistory($userReserve: String!, $startTimestamp: Int!, $endTimestamp: Int!) {
     items: aTokenBalanceHistoryItems(
       where: {
         userReserve: $userReserve
@@ -107,11 +100,7 @@ export const ATOKEN_HISTORY_QUERY = gql`
  * vToken (variable-debt) balance history items, same shape as ATOKEN_HISTORY_QUERY.
  */
 export const VTOKEN_HISTORY_QUERY = gql`
-  query VTokenHistory(
-    $userReserve: String!
-    $startTimestamp: Int!
-    $endTimestamp: Int!
-  ) {
+  query VTokenHistory($userReserve: String!, $startTimestamp: Int!, $endTimestamp: Int!) {
     items: vTokenBalanceHistoryItems(
       where: {
         userReserve: $userReserve
@@ -148,17 +137,9 @@ export const VTOKEN_HISTORY_QUERY = gql`
  * convert scaled balances at any timestamp into nominal balances.
  */
 export const RESERVE_PARAMS_HISTORY_QUERY = gql`
-  query ReserveParamsHistory(
-    $reserve: String!
-    $startTimestamp: Int!
-    $endTimestamp: Int!
-  ) {
+  query ReserveParamsHistory($reserve: String!, $startTimestamp: Int!, $endTimestamp: Int!) {
     items: reserveParamsHistoryItems(
-      where: {
-        reserve: $reserve
-        timestamp_gte: $startTimestamp
-        timestamp_lt: $endTimestamp
-      }
+      where: { reserve: $reserve, timestamp_gte: $startTimestamp, timestamp_lt: $endTimestamp }
       orderBy: timestamp
       orderDirection: asc
       first: 1000
@@ -178,6 +159,26 @@ export const RESERVE_PARAMS_HISTORY_QUERY = gql`
       timestamp
       liquidityIndex
       variableBorrowIndex
+    }
+  }
+`;
+
+/**
+ * Reserve configuration history at a specific timestamp.
+ * Used to check if a reserve was frozen at the start of a week (t0).
+ */
+export const RESERVE_CONFIG_AT_TIMESTAMP_QUERY = gql`
+  query ReserveConfigAtTimestamp($reserve: String!, $timestamp: Int!) {
+    configItems: reserveConfigurationHistoryItems(
+      where: { reserve: $reserve, timestamp_lte: $timestamp }
+      orderBy: timestamp
+      orderDirection: desc
+      first: 1
+    ) {
+      id
+      timestamp
+      isFrozen
+      isActive
     }
   }
 `;

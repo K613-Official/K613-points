@@ -1,3 +1,4 @@
+import { aaveOracleAbi, erc20Abi } from '../chain/abi.js';
 import type { Address, PublicClient } from 'viem';
 
 /**
@@ -33,27 +34,46 @@ export type AssetPrices = ReadonlyMap<Address, bigint>;
  * NOTE: This gives a POINT-IN-TIME balance at a specific block, not a minimum.
  * Use this only for sanity checks, not for actual min-balance calculation.
  */
-export async function fetchEndOfWeekBalance(_input: EndOfWeekBalanceInput): Promise<bigint> {
-  // TODO: implement.
-  // - Call aToken.balanceOf(user) at blockNumber via client.readContract.
-  // - Return balance in wei.
-  // Security note: this is post-interest-accrual balance, not scaled balance.
-  // If user withdrew some aTokens during the week, this will reflect that,
-  // whereas history-based min catches it via transfer events.
-  throw new Error('fetchEndOfWeekBalance: not implemented');
+export async function fetchEndOfWeekBalance(input: EndOfWeekBalanceInput): Promise<bigint> {
+  const balance = await input.client.readContract({
+    address: input.aTokenAddress,
+    abi: erc20Abi,
+    functionName: 'balanceOf',
+    args: [input.userAddress],
+    blockNumber: input.blockNumber,
+  });
+  return balance as bigint;
 }
 
-export async function fetchPrices(_input: PriceFetchInput): Promise<AssetPrices> {
-  // TODO: implement.
-  // - Build multicall: AaveOracle.getAssetPrice(asset) for each asset.
-  // - Use client.multicall({ contracts, blockNumber }).
-  // - Return Map<address, price-in-oracle-units>.
-  //
-  // RESERVE FILTERING NOTES (from security audit):
-  // - Only fetch prices for reserves that are NOT frozen at t0 (start of week).
-  // - If a reserve becomes frozen mid-week (t0 < freeze < t1), still count it
-  //   (user not responsible for admin's freeze action).
-  // - Use ReserveConfigurationHistoryItem from subgraph to check "was frozen at t0".
-  // - Skip reserves with isFrozen=true at t0 (deprecated assets, no users affected).
-  throw new Error('fetchPrices: not implemented');
+export async function fetchPrices(input: PriceFetchInput): Promise<AssetPrices> {
+  if (input.assets.length === 0) {
+    return new Map();
+  }
+
+  const contracts = input.assets.map((asset) => ({
+    address: input.oracleAddress,
+    abi: aaveOracleAbi,
+    functionName: 'getAssetPrice' as const,
+    args: [asset],
+    blockNumber: input.blockNumber,
+  }));
+
+  const prices = await input.client.multicall({
+    contracts,
+    blockNumber: input.blockNumber,
+  });
+
+  const result = new Map<Address, bigint>();
+  for (let i = 0; i < input.assets.length; i++) {
+    const asset = input.assets[i];
+    if (!asset) {
+      continue;
+    }
+    const price = prices[i];
+    if (price && price.status === 'success' && typeof price.result === 'bigint') {
+      result.set(asset, price.result);
+    }
+  }
+
+  return result;
 }

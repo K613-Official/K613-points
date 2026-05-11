@@ -3,8 +3,13 @@ import { cleanEnv as envalidCleanEnv, url, str, makeValidator } from 'envalid';
 export const DEFAULT_SUBGRAPH_URL =
   'https://api.studio.thegraph.com/query/1748605/k-613-prod/version/latest';
 
+/** AaveOracle contract address on Monad. */
+export const DEFAULT_AAVE_ORACLE_ADDRESS = '0x0dFfb00A751a74ac8CF8B022Bf86b1ECd9D7ae6F';
+
 const hexAddressOrEmpty = makeValidator<`0x${string}` | ''>((x: string) => {
-  if (!x) return '';
+  if (!x) {
+    return '';
+  }
   if (!/^0x[a-fA-F0-9]{40}$/iu.test(x)) {
     throw new Error('must be 0x-prefixed 40 hex chars (20 bytes)');
   }
@@ -12,7 +17,9 @@ const hexAddressOrEmpty = makeValidator<`0x${string}` | ''>((x: string) => {
 });
 
 const hexPrivateKeyOrEmpty = makeValidator<`0x${string}` | ''>((x: string) => {
-  if (!x) return '';
+  if (!x) {
+    return '';
+  }
   if (!/^0x[a-fA-F0-9]{64}$/iu.test(x)) {
     throw new Error('must be 0x-prefixed 64 hex chars (32 bytes)');
   }
@@ -36,6 +43,10 @@ const _cleanEnv = (source?: NodeJS.ProcessEnv) =>
     DISTRIBUTOR_ADDRESS: hexAddressOrEmpty({
       default: '',
       desc: 'K613S1Distributor contract address (optional for snapshot)',
+    }),
+    AAVE_ORACLE_ADDRESS: hexAddressOrEmpty({
+      default: DEFAULT_AAVE_ORACLE_ADDRESS,
+      desc: 'AaveOracle contract address on Monad (defaults to known prod oracle)',
     }),
     OPERATOR_PRIVATE_KEY: hexPrivateKeyOrEmpty({
       default: '',

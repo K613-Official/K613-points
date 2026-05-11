@@ -17,14 +17,33 @@ export interface PostRootInput {
   weekNumber: number;
 }
 
-export async function postMerkleRoot(_input: PostRootInput): Promise<Hex> {
-  // TODO: implement.
-  // - Read current merkleRoot, lastRootCumulativeSupply, weeklyMintCap (sanity).
-  // - Validate input.cumulativeSupply >= lastRootCumulativeSupply and that the
-  //   delta does not exceed weeklyMintCap (defence-in-depth; contract enforces too).
-  // - walletClient.writeContract({ abi: k613S1DistributorAbi, functionName: 'setMerkleRoot', ... }).
-  // - Wait for tx receipt and return the hash.
-  throw new Error('postMerkleRoot: not implemented');
+export async function postMerkleRoot(input: PostRootInput): Promise<Hex> {
+  const state = await readDistributorState();
+
+  if (input.cumulativeSupply < state.lastRootCumulativeSupply) {
+    throw new Error(
+      `cumulativeSupply (${input.cumulativeSupply}) < lastRootCumulativeSupply (${state.lastRootCumulativeSupply}) — monotonicity violation`,
+    );
+  }
+
+  const delta = input.cumulativeSupply - state.lastRootCumulativeSupply;
+  if (delta > state.weeklyMintCap) {
+    throw new Error(`weekly delta (${delta}) exceeds weeklyMintCap (${state.weeklyMintCap})`);
+  }
+
+  const walletClient = getWalletClient();
+  const address = getDistributorAddress();
+
+  const hash = await walletClient.writeContract({
+    address,
+    abi: k613S1DistributorAbi,
+    functionName: 'setMerkleRoot',
+    args: [input.root, input.cumulativeSupply, BigInt(input.weekNumber)],
+  } as unknown as Parameters<typeof walletClient.writeContract>[0]);
+
+  const publicClient = getPublicClient();
+  await publicClient.waitForTransactionReceipt({ hash });
+  return hash;
 }
 
 export interface DistributorState {
@@ -37,13 +56,24 @@ export async function readDistributorState(): Promise<DistributorState> {
   const client = getPublicClient();
   const address = getDistributorAddress();
   const [merkleRoot, lastRootCumulativeSupply, weeklyMintCap] = await Promise.all([
-    client.readContract({ address, abi: k613S1DistributorAbi, functionName: 'merkleRoot' }),
+    client.readContract({
+      address,
+      abi: k613S1DistributorAbi,
+      functionName: 'merkleRoot',
+      args: [],
+    }) as Promise<Hex>,
     client.readContract({
       address,
       abi: k613S1DistributorAbi,
       functionName: 'lastRootCumulativeSupply',
-    }),
-    client.readContract({ address, abi: k613S1DistributorAbi, functionName: 'weeklyMintCap' }),
+      args: [],
+    }) as Promise<bigint>,
+    client.readContract({
+      address,
+      abi: k613S1DistributorAbi,
+      functionName: 'weeklyMintCap',
+      args: [],
+    }) as Promise<bigint>,
   ]);
   return { merkleRoot, lastRootCumulativeSupply, weeklyMintCap };
 }

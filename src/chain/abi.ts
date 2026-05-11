@@ -1,62 +1,26 @@
+import k613S1DistributorAbiJson from './abis/K613S1Distributor.json' assert { type: 'json' };
 
-export const k613S1DistributorAbi = [
-  {
-    type: 'function',
-    name: 'setMerkleRoot',
-    stateMutability: 'nonpayable',
-    inputs: [
-      { name: 'newRoot', type: 'bytes32' },
-      { name: 'newCumulativeSupply', type: 'uint256' },
-      { name: 'weekNumber', type: 'uint256' },
-    ],
-    outputs: [],
-  },
-  {
-    type: 'function',
-    name: 'merkleRoot',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'bytes32' }],
-  },
-  {
-    type: 'function',
-    name: 'lastRootCumulativeSupply',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    type: 'function',
-    name: 'weeklyMintCap',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    type: 'function',
-    name: 'claimed',
-    stateMutability: 'view',
-    inputs: [{ name: 'account', type: 'address' }],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-] as const;
+import k613SeasonClaimAbiJson from './abis/K613SeasonClaim.json' assert { type: 'json' };
 
-/**
- * Minimal AaveOracle ABI for fetching asset prices via multicall.
- */
-export const aaveOracleAbi = [
-  {
-    type: 'function',
-    name: 'getAssetPrice',
-    stateMutability: 'view',
-    inputs: [{ name: 'asset', type: 'address' }],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    type: 'function',
-    name: 'getAssetsPrices',
-    stateMutability: 'view',
-    inputs: [{ name: 'assets', type: 'address[]' }],
-    outputs: [{ name: '', type: 'uint256[]' }],
-  },
-] as const;
+import k613AbiJson from './abis/K613.json' assert { type: 'json' };
+
+import k613S1AbiJson from './abis/K613S1.json' assert { type: 'json' };
+
+import aaveOracleAbiJson from './abis/AaveOracle.json' assert { type: 'json' };
+
+import erc20AbiJson from './abis/ERC20.json' assert { type: 'json' };
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const k613S1DistributorAbi: any = k613S1DistributorAbiJson;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const k613SeasonClaimAbi: any = k613SeasonClaimAbiJson;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const k613Abi: any = k613AbiJson;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const k613S1Abi: any = k613S1AbiJson;
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const aaveOracleAbi: any = aaveOracleAbiJson;
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const erc20Abi: any = erc20AbiJson;

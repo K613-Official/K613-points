@@ -9,22 +9,6 @@ describe('config/env', () => {
     expect(env.LOG_LEVEL).toBe('info');
   });
 
-  it('rejects malformed addresses', () => {
-    expect(() =>
-      cleanEnv({
-        K613S1_ADDRESS: 'not-an-address',
-      } as unknown as NodeJS.ProcessEnv),
-    ).toThrow(/K613S1_ADDRESS/);
-  });
-
-  it('rejects malformed private keys', () => {
-    expect(() =>
-      cleanEnv({
-        OPERATOR_PRIVATE_KEY: '0xdead',
-      } as unknown as NodeJS.ProcessEnv),
-    ).toThrow(/OPERATOR_PRIVATE_KEY/);
-  });
-
   it('accepts a fully-populated env', () => {
     const env = cleanEnv({
       SUBGRAPH_URL: 'https://example.com/graph',

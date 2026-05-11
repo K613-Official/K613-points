@@ -1,5 +1,8 @@
 import '../cli-setup.js';
 import { Command } from 'commander';
+import { readFile, mkdir, writeFile } from 'fs/promises';
+import { join } from 'path';
+import { StandardMerkleTree } from '@openzeppelin/merkle-tree';
 import { logger } from '../util/logger.js';
 
 const program = new Command();
@@ -13,5 +16,38 @@ program.parse();
 
 const opts = program.opts<{ week: number }>();
 
-logger.info({ week: opts.week }, 'TODO: export-proofs command not implemented');
-process.exit(0);
+async function run() {
+  try {
+    const treeData = JSON.parse(
+      await readFile(join('snapshots', `week-${opts.week}`, 'tree.json'), 'utf-8'),
+    );
+
+    const tree = StandardMerkleTree.load(treeData.tree);
+    const proofsDir = join('snapshots', `week-${opts.week}`, 'proofs');
+    await mkdir(proofsDir, { recursive: true });
+
+    let count = 0;
+    for (const [i, leaf] of tree.entries()) {
+      const [address, amount] = leaf;
+      const proof = tree.getProof(i);
+
+      const proofData = {
+        address,
+        amount: amount.toString(),
+        proof,
+        root: tree.root,
+      };
+
+      const filename = `${address.toLowerCase().slice(2)}.json`;
+      await writeFile(join(proofsDir, filename), JSON.stringify(proofData, null, 2));
+      count++;
+    }
+
+    logger.info({ path: proofsDir, proofs: count }, 'Proofs exported');
+  } catch (error) {
+    logger.error(error, 'Export proofs failed');
+    process.exit(1);
+  }
+}
+
+run();

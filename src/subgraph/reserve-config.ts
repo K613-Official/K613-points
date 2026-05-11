@@ -1,6 +1,5 @@
-// PublicClient type imported for future use in fetchReserveConfigHistoryFromRpc
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import type { PublicClient } from 'viem';
+import { getSubgraphClient } from './client.js';
+import { RESERVE_CONFIG_AT_TIMESTAMP_QUERY } from './queries.js';
 
 /**
  * Reserve configuration tracking for mid-week freeze detection.
@@ -14,23 +13,38 @@ export interface ReserveConfigAtTimestamp {
   isPaused: boolean;
 }
 
-/**
- * Query subgraph for reserve configuration history.
- * Use ReserveConfigurationHistoryItem to determine if a reserve was frozen at t0.
- *
- * TODO: Implement via subgraph query.
- * Query ReserveConfigurationHistoryItem(where: { reserve: $reserve, timestamp_lte: $t0 })
- * orderBy: timestamp desc, first: 1
- * Return the latest config before t0 to check isFrozen flag.
- */
 export async function getReserveConfigAtTimestamp(
-  _reserve: string,
-  _timestamp: number,
+  reserve: string,
+  timestamp: number,
 ): Promise<ReserveConfigAtTimestamp> {
-  // TODO: implement.
-  // This would query the subgraph for ReserveConfigurationHistoryItem
-  // to see if the reserve was frozen/paused at a specific timestamp.
-  throw new Error('getReserveConfigAtTimestamp: not implemented');
+  const client = getSubgraphClient();
+
+  const response = await client.request<{
+    configItems: Array<{
+      id: string;
+      timestamp: number;
+      isFrozen: boolean;
+      isActive: boolean;
+    }>;
+  }>(RESERVE_CONFIG_AT_TIMESTAMP_QUERY, {
+    reserve: reserve.toLowerCase(),
+    timestamp,
+  });
+
+  const item = response.configItems[0];
+  if (!item) {
+    return {
+      timestamp: 0,
+      isFrozen: false,
+      isPaused: false,
+    };
+  }
+
+  return {
+    timestamp: item.timestamp,
+    isFrozen: item.isFrozen,
+    isPaused: !item.isActive,
+  };
 }
 
 /**

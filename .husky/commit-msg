@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+# Conventional commit format check
+commit_msg_file=$1
+commit_msg=$(cat "$commit_msg_file")
+
+# Pattern: type(scope?): description
+# Allowed types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9-]+\))?: .{1,100}$'
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+  echo "Invalid commit message format"
+  echo ""
+  echo "Required format: <type>(<scope>): <description>"
+  echo ""
+  echo "Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert"
+  echo ""
+  echo "Examples:"
+  echo "  feat: add merkle tree verification"
+  echo "  fix(snapshot): handle empty balance history"
+  echo "  chore(deps): bump viem to 2.21.45"
+  echo ""
+  echo "Your message: $commit_msg"
+  exit 1
+fi
+
+echo "Commit message format OK"
