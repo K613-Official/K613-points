@@ -70,8 +70,11 @@ export function computeMinBalances(input: MinBalanceInput): MinBalanceResult {
     }
   }
 
-  // Find minimum balance
-  const minBalance = candidates.reduce((a, b) => (a < b ? a : b), 0n);
+  // Find minimum balance. NOTE: do NOT seed reduce with 0n — balances are
+  // always >= 0, so a 0n seed would force every result to 0. `candidates` is
+  // guaranteed non-empty here (the early-return above handles the empty case,
+  // and the preItem/else branch always pushes at least one value).
+  const minBalance = candidates.reduce((a, b) => (a < b ? a : b));
 
   return {
     minBalance,

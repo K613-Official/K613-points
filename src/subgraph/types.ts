@@ -5,7 +5,6 @@ export interface ReserveSummary {
   underlyingAsset: string;
   aToken: { id: string };
   vToken: { id: string };
-  sToken: { id: string } | null;
 }
 
 export interface ActiveReservesResponse {

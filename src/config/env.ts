@@ -1,4 +1,4 @@
-import { cleanEnv as envalidCleanEnv, url, str, makeValidator } from 'envalid';
+import { cleanEnv as envalidCleanEnv, url, str, num, makeValidator } from 'envalid';
 
 export const DEFAULT_SUBGRAPH_URL =
   'https://api.studio.thegraph.com/query/1748605/k-613-prod/version/latest';
@@ -56,6 +56,26 @@ const _cleanEnv = (source?: NodeJS.ProcessEnv) =>
       default: 'info',
       desc: 'Pino log level',
       choices: ['trace', 'debug', 'info', 'warn', 'error', 'fatal'],
+    }),
+    SEASON_1_START_TIMESTAMP: num({
+      default: 0,
+      desc: 'Unix seconds of Season 1 week-1 start; required by snapshot/build-tree',
+    }),
+    CHAIN_ID: num({
+      default: 143,
+      desc: 'EVM chain id (Monad mainnet=143, Arbitrum Sepolia=421614)',
+    }),
+    CHAIN_NAME: str({
+      default: 'Monad',
+      desc: 'Human-readable chain name for the viem client',
+    }),
+    NATIVE_CURRENCY_SYMBOL: str({
+      default: 'MON',
+      desc: 'Native currency symbol (e.g. ETH on Arbitrum Sepolia)',
+    }),
+    MULTICALL3_ADDRESS: hexAddressOrEmpty({
+      default: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      desc: 'Multicall3 contract (canonical address on most chains incl. Arbitrum Sepolia)',
     }),
   });
 

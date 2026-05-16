@@ -1,10 +1,5 @@
 import { gql } from 'graphql-request';
 
-/**
- * Active reserves at the latest indexed block. We exclude frozen reserves
- * (e.g. wsrUSD) so they don't accrue points. The `isActive` / `isFrozen`
- * flags live on the `reserve` entity in the Aave v3 subgraph.
- */
 export const ACTIVE_RESERVES_QUERY = gql`
   query ActiveReserves {
     reserves(where: { isActive: true, isFrozen: false }, first: 1000) {
@@ -18,20 +13,10 @@ export const ACTIVE_RESERVES_QUERY = gql`
       vToken {
         id
       }
-      sToken {
-        id
-      }
     }
   }
 `;
 
-/**
- * All distinct (user, reserve) pairs that ever held a non-zero a/v/s balance
- * up to `endTimestamp`. Used to enumerate which histories to fetch.
- *
- * We page through `userReserves` (Aave v3 subgraph entity) where the user has
- * either current scaled supply or borrow > 0 OR has a balance history record.
- */
 export const USERS_WITH_BALANCE_QUERY = gql`
   query UsersWithBalance($first: Int!, $skip: Int!, $endTimestamp: Int!) {
     userReserves(
@@ -57,7 +42,8 @@ export const USERS_WITH_BALANCE_QUERY = gql`
  * aToken balance history items for a single user/reserve, plus the immediately
  * preceding item (preItem) so we can reconstruct the balance at t0.
  *
- * NOTE: subgraph entity name is `aTokenBalanceHistoryItem` in aave-v3.
+ * NOTE: this subgraph's query field is `atokenBalanceHistoryItems` (lowercase
+ * "token"); the entity type is `ATokenBalanceHistoryItem`.
  * `scaledATokenBalance` × current liquidity index = nominal balance.
  *
  * aToken transfers ARE indexed by subgraph via handleBalanceTransfer,
@@ -65,7 +51,7 @@ export const USERS_WITH_BALANCE_QUERY = gql`
  */
 export const ATOKEN_HISTORY_QUERY = gql`
   query ATokenHistory($userReserve: String!, $startTimestamp: Int!, $endTimestamp: Int!) {
-    items: aTokenBalanceHistoryItems(
+    items: atokenBalanceHistoryItems(
       where: {
         userReserve: $userReserve
         timestamp_gte: $startTimestamp
@@ -81,7 +67,7 @@ export const ATOKEN_HISTORY_QUERY = gql`
       currentATokenBalance
       index
     }
-    preItem: aTokenBalanceHistoryItems(
+    preItem: atokenBalanceHistoryItems(
       where: { userReserve: $userReserve, timestamp_lt: $startTimestamp }
       orderBy: timestamp
       orderDirection: desc
@@ -101,7 +87,7 @@ export const ATOKEN_HISTORY_QUERY = gql`
  */
 export const VTOKEN_HISTORY_QUERY = gql`
   query VTokenHistory($userReserve: String!, $startTimestamp: Int!, $endTimestamp: Int!) {
-    items: vTokenBalanceHistoryItems(
+    items: vtokenBalanceHistoryItems(
       where: {
         userReserve: $userReserve
         timestamp_gte: $startTimestamp
@@ -117,7 +103,7 @@ export const VTOKEN_HISTORY_QUERY = gql`
       currentVariableDebt
       index
     }
-    preItem: vTokenBalanceHistoryItems(
+    preItem: vtokenBalanceHistoryItems(
       where: { userReserve: $userReserve, timestamp_lt: $startTimestamp }
       orderBy: timestamp
       orderDirection: desc

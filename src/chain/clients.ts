@@ -7,7 +7,7 @@ import {
 } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
 import { cleanEnv } from '../config/env.js';
-import { monad } from '../config/network.js';
+import { getChain } from '../config/network.js';
 
 let publicClient: PublicClient | undefined;
 let walletClient: WalletClient | undefined;
@@ -18,7 +18,7 @@ export function getPublicClient(): PublicClient {
     if (!env.RPC_URL) {
       throw new Error('RPC_URL is required to create a public client');
     }
-    publicClient = createPublicClient({ chain: monad, transport: http(env.RPC_URL) });
+    publicClient = createPublicClient({ chain: getChain(), transport: http(env.RPC_URL) });
   }
   return publicClient;
 }
@@ -39,7 +39,7 @@ export function getWalletClient(): WalletClient {
     const account = privateKeyToAccount(env.OPERATOR_PRIVATE_KEY);
     walletClient = createWalletClient({
       account,
-      chain: monad,
+      chain: getChain(),
       transport: http(env.RPC_URL),
     });
   }

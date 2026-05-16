@@ -17,6 +17,9 @@ import { computeMinBalances } from '../snapshot/min-balance.js';
 import { filterReservesNotFrozenAtT0 } from '../subgraph/reserve-config.js';
 import { fetchPrices } from '../snapshot/price.js';
 import { computePoints } from '../snapshot/points.js';
+import { toUsd18 } from '../snapshot/usd.js';
+import { serializePointsFile, type UserPointsEntry } from '../snapshot/points-file.js';
+import type { Address } from '../snapshot/aggregate.js';
 
 const PAGE_SIZE = 1000;
 
@@ -84,16 +87,22 @@ async function fetchATokenHistory(
   t1: number,
 ): Promise<BalanceHistoryResponse> {
   const res = await subgraphClient.request<{
-    items: Array<{ timestamp: number; currentATokenBalance: bigint }>;
-    preItem: Array<{ timestamp: number; currentATokenBalance: bigint }>;
+    items: Array<{ timestamp: number | string; currentATokenBalance: string }>;
+    preItem: Array<{ timestamp: number | string; currentATokenBalance: string }>;
   }>(ATOKEN_HISTORY_QUERY, {
     userReserve: userReserveId,
     startTimestamp: t0,
     endTimestamp: t1,
   });
   return {
-    items: res.items.map((x) => ({ timestamp: x.timestamp, balance: x.currentATokenBalance })),
-    preItem: res.preItem.map((x) => ({ timestamp: x.timestamp, balance: x.currentATokenBalance })),
+    items: res.items.map((x) => ({
+      timestamp: Number(x.timestamp),
+      balance: BigInt(x.currentATokenBalance),
+    })),
+    preItem: res.preItem.map((x) => ({
+      timestamp: Number(x.timestamp),
+      balance: BigInt(x.currentATokenBalance),
+    })),
   };
 }
 
@@ -104,16 +113,22 @@ async function fetchVTokenHistory(
   t1: number,
 ): Promise<BalanceHistoryResponse> {
   const res = await subgraphClient.request<{
-    items: Array<{ timestamp: number; currentVariableDebt: bigint }>;
-    preItem: Array<{ timestamp: number; currentVariableDebt: bigint }>;
+    items: Array<{ timestamp: number | string; currentVariableDebt: string }>;
+    preItem: Array<{ timestamp: number | string; currentVariableDebt: string }>;
   }>(VTOKEN_HISTORY_QUERY, {
     userReserve: userReserveId,
     startTimestamp: t0,
     endTimestamp: t1,
   });
   return {
-    items: res.items.map((x) => ({ timestamp: x.timestamp, balance: x.currentVariableDebt })),
-    preItem: res.preItem.map((x) => ({ timestamp: x.timestamp, balance: x.currentVariableDebt })),
+    items: res.items.map((x) => ({
+      timestamp: Number(x.timestamp),
+      balance: BigInt(x.currentVariableDebt),
+    })),
+    preItem: res.preItem.map((x) => ({
+      timestamp: Number(x.timestamp),
+      balance: BigInt(x.currentVariableDebt),
+    })),
   };
 }
 
@@ -162,7 +177,7 @@ async function run() {
     logger.info({ count: prices.size }, 'Fetched asset prices');
 
     // 5. Compute points per user (supply + borrow)
-    const userPoints = new Map<string, bigint>();
+    const userPoints = new Map<Address, UserPointsEntry>();
     const ORACLE_DECIMALS = 8n; // Aave v3 uses 8-decimal USD pricing
 
     for (const userReserve of userReserves) {
@@ -176,9 +191,8 @@ async function run() {
       const userReserveId = `${userReserve.user.id.toLowerCase()}${reserve.id.toLowerCase()}`;
       const tokenDecimals = BigInt(reserve.decimals);
       const price = prices.get(reserve.underlyingAsset.toLowerCase() as `0x${string}`) ?? 0n;
-      const priceScale = 10n ** (tokenDecimals + ORACLE_DECIMALS);
 
-      // Supply: aToken min-balance
+      // Supply: aToken min-balance -> USD (18 decimals)
       const aHistory = await fetchATokenHistory(
         subgraphClient,
         userReserveId,
@@ -191,10 +205,14 @@ async function run() {
         t0: week.startTimestamp,
         t1: week.endTimestamp,
       });
-      // USD = balance * price / 10^(tokenDecimals + 8) — keeps integer math safe
-      const supplyUsd = (aMin.minBalance * price) / priceScale;
+      const supplyUsd = toUsd18({
+        minBalance: aMin.minBalance,
+        price,
+        tokenDecimals,
+        oracleDecimals: ORACLE_DECIMALS,
+      });
 
-      // Borrow: vToken min-balance
+      // Borrow: vToken min-balance -> USD (18 decimals)
       const vHistory = await fetchVTokenHistory(
         subgraphClient,
         userReserveId,
@@ -207,7 +225,12 @@ async function run() {
         t0: week.startTimestamp,
         t1: week.endTimestamp,
       });
-      const borrowUsd = (vMin.minBalance * price) / priceScale;
+      const borrowUsd = toUsd18({
+        minBalance: vMin.minBalance,
+        price,
+        tokenDecimals,
+        oracleDecimals: ORACLE_DECIMALS,
+      });
 
       const points = computePoints({
         user: userReserve.user.id as `0x${string}`,
@@ -217,25 +240,26 @@ async function run() {
         borrowUsd,
       });
 
-      const current = userPoints.get(userReserve.user.id.toLowerCase()) ?? 0n;
-      userPoints.set(userReserve.user.id.toLowerCase(), current + points.totalPoints);
+      const key = userReserve.user.id.toLowerCase() as Address;
+      const prev = userPoints.get(key) ?? { points: 0n, supplyUsd: 0n, borrowUsd: 0n };
+      userPoints.set(key, {
+        points: prev.points + points.totalPoints,
+        supplyUsd: prev.supplyUsd + supplyUsd,
+        borrowUsd: prev.borrowUsd + borrowUsd,
+      });
     }
 
     // 6. Save snapshot
     const weekDir = join(opts.out, `week-${opts.week}`);
     await mkdir(weekDir, { recursive: true });
 
-    const snapshot = {
+    const snapshot = serializePointsFile({
       week: opts.week,
       timestamp: new Date().toISOString(),
       startTimestamp: week.startTimestamp,
       endTimestamp: week.endTimestamp,
-      userPoints: Object.fromEntries(
-        [...userPoints.entries()]
-          .sort(([a], [b]) => (a < b ? -1 : 1))
-          .map(([addr, pts]) => [addr, pts.toString()]),
-      ),
-    };
+      userPoints,
+    });
 
     const outputPath = join(weekDir, 'points.json');
     await writeFile(outputPath, JSON.stringify(snapshot, null, 2));

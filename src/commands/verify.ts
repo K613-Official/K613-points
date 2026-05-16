@@ -30,8 +30,12 @@ async function run() {
     for (const [i, leaf] of tree.entries()) {
       if (leaf[0].toLowerCase() === addr) {
         const proof = tree.getProof(i);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const verified = tree.verify(i, leaf as any);
+        const verified = StandardMerkleTree.verify(
+          tree.root,
+          treeData.tree.leafEncoding,
+          leaf as [string, string],
+          proof,
+        );
 
         logger.info(
           {

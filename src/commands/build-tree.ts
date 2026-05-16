@@ -1,16 +1,20 @@
 import '../cli-setup.js';
 import { Command } from 'commander';
-import { readFile, mkdir, writeFile } from 'fs/promises';
+import { mkdir, writeFile } from 'fs/promises';
 import { join } from 'path';
-import { StandardMerkleTree } from '@openzeppelin/merkle-tree';
 import { logger } from '../util/logger.js';
-import { LEAF_TYPES, makeLeafValues } from '../merkle/leaf.js';
+import { makeLeafValues } from '../merkle/leaf.js';
+import { buildTree } from '../merkle/tree.js';
+import { aggregateAllWeeks } from '../snapshot/aggregate.js';
+import { loadWeeklyPoints } from '../snapshot/points-file.js';
+import { buildLeaderboard, serializeLeaderboard } from '../snapshot/leaderboard.js';
+import { getWeekWindow } from '../config/season.js';
 
 const program = new Command();
 
 program
   .name('build-tree')
-  .description('Read points.json for week N and build Merkle tree + leaderboard + proofs')
+  .description('Aggregate weeks 1..N into cumulative Merkle tree + leaderboard')
   .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
   .option('--in <dir>', 'snapshots directory', 'snapshots');
 
@@ -20,24 +24,14 @@ const opts = program.opts<{ week: number; in: string }>();
 
 async function run() {
   try {
-    const snapshotPath = join(opts.in, `week-${opts.week}`, 'points.json');
-    const snapshotContent = await readFile(snapshotPath, 'utf-8');
-    const snapshot = JSON.parse(snapshotContent);
+    // 1. Load weeks 1..N (fails loudly on any gap) and aggregate cumulatively.
+    const { weeks, weekN } = await loadWeeklyPoints(opts.in, opts.week);
+    const cumulative = aggregateAllWeeks(weeks);
 
-    const userPoints = snapshot.userPoints as Record<string, string>;
-    const totals = new Map(
-      Object.entries(userPoints).map(([addr, points]) => [
-        addr.toLowerCase() as `0x${string}`,
-        BigInt(points),
-      ]),
-    );
-
-    const leaves = makeLeafValues(totals);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const tree = StandardMerkleTree.of(leaves as any, LEAF_TYPES as any);
-
-    // Cumulative supply = sum of all leaf amounts (the contract uses this as the
-    // monotonicity guard + weekly-mint-cap check).
+    // 2. Build the Merkle tree from cumulative totals. buildTree() stringifies
+    //    the bigint amounts, so tree.dump() stays JSON-serializable.
+    const leaves = makeLeafValues(cumulative);
+    const tree = buildTree(leaves);
     const cumulativeSupply = leaves.reduce((acc, [, amount]) => acc + amount, 0n);
 
     const weekDir = join(opts.in, `week-${opts.week}`);
@@ -49,18 +43,33 @@ async function run() {
       tree: tree.dump(),
       leaves: leaves.length,
     };
+    const treePath = join(weekDir, 'tree.json');
+    await writeFile(treePath, JSON.stringify(treeData, null, 2));
 
-    const outputPath = join(weekDir, 'tree.json');
-    await writeFile(outputPath, JSON.stringify(treeData, null, 2));
+    // 3. Leaderboard from the SAME cumulative map (no divergence possible).
+    const window = getWeekWindow(opts.week);
+    const leaderboard = serializeLeaderboard(
+      buildLeaderboard({
+        week: opts.week,
+        weekStart: window.startTimestamp,
+        weekEnd: window.endTimestamp,
+        finalizedAt: new Date().toISOString(),
+        cumulative,
+        weekN,
+      }),
+    );
+    const leaderboardPath = join(weekDir, 'leaderboard.json');
+    await writeFile(leaderboardPath, JSON.stringify(leaderboard, null, 2));
 
     logger.info(
       {
-        path: outputPath,
+        treePath,
+        leaderboardPath,
         leaves: leaves.length,
         root: tree.root,
         cumulativeSupply: cumulativeSupply.toString(),
       },
-      'Tree built',
+      'Tree + leaderboard built',
     );
   } catch (error) {
     logger.error(error, 'Build tree failed');
