@@ -17,6 +17,8 @@
     "post-root": "tsx src/commands/post-root.ts",
     "verify": "tsx src/commands/verify.ts",
     "export-proofs": "tsx src/commands/export-proofs.ts",
+    "apply-bonuses": "tsx src/commands/apply-bonuses.ts",
+    "build-galxe-bonus": "tsx src/commands/build-galxe-bonus.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",

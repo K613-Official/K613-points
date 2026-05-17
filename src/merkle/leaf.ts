@@ -18,9 +18,21 @@ export function makeLeafValues(
   totals: ReadonlyMap<Address, bigint> | Iterable<readonly [Address, bigint]>,
 ): LeafValue[] {
   const entries =
-    totals instanceof Map ? [...totals.entries()] : ([...totals] as Array<readonly [Address, bigint]>);
+    totals instanceof Map
+      ? [...totals.entries()]
+      : ([...totals] as Array<readonly [Address, bigint]>);
   return entries
     .filter(([, amount]) => amount > 0n)
-    .sort(([a], [b]) => (a.toLowerCase() < b.toLowerCase() ? -1 : a.toLowerCase() > b.toLowerCase() ? 1 : 0))
+    .sort(([a], [b]) => {
+      const la = a.toLowerCase();
+      const lb = b.toLowerCase();
+      if (la < lb) {
+        return -1;
+      }
+      if (la > lb) {
+        return 1;
+      }
+      return 0;
+    })
     .map(([addr, amt]) => makeLeafValue(addr, amt));
 }

@@ -77,6 +77,18 @@ const _cleanEnv = (source?: NodeJS.ProcessEnv) =>
       default: '0xcA11bde05977b3631167028862bE2a173976CA11',
       desc: 'Multicall3 contract (canonical address on most chains incl. Arbitrum Sepolia)',
     }),
+    GALXE_API_URL: url({
+      default: 'https://graphigo.prd.galaxy.eco/query',
+      desc: 'Galxe GraphQL endpoint (host stayed galaxy.eco after the rebrand)',
+    }),
+    GALXE_ACCESS_TOKEN: str({
+      default: '',
+      desc: 'Galxe access-token header (space owner/admin; only for build-galxe-bonus)',
+    }),
+    GALXE_SPACE_ID: str({
+      default: '86004',
+      desc: 'Galxe space id to pull campaign participants from',
+    }),
   });
 
 export type Env = ReturnType<typeof _cleanEnv>;

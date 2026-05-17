@@ -7,7 +7,10 @@ const BonusKindSchema = z.enum(['og', 'social', 'contributor', 'other']);
 
 const ManualBonusSchema = z.object({
   address: HexAddress.transform((s): `0x${string}` => s.toLowerCase() as `0x${string}`),
-  amount: z.union([z.string(), z.number()]).transform((v): bigint => BigInt(v)),
+  amount: z
+    .union([z.string(), z.number()])
+    .transform((v): bigint => BigInt(v))
+    .refine((v) => v >= 0n, { message: 'amount must be non-negative' }),
   kind: BonusKindSchema.default('other'),
   note: z.string().optional(),
 });

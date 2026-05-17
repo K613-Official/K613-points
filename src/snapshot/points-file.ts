@@ -14,6 +14,11 @@ export interface PointsFile {
   startTimestamp: number;
   endTimestamp: number;
   userPoints: Map<Address, UserPointsEntry>;
+  /**
+   * Content hashes of bonus lists already folded into `userPoints` (apply-bonuses
+   * idempotency). Absent on a fresh snapshot; build-tree/leaderboard ignore it.
+   */
+  appliedBonusHashes?: string[];
 }
 
 interface SerializedEntry {
@@ -28,6 +33,7 @@ export interface SerializedPointsFile {
   startTimestamp: number;
   endTimestamp: number;
   userPoints: Record<string, SerializedEntry>;
+  appliedBonusHashes?: string[];
 }
 
 export function serializePointsFile(file: PointsFile): SerializedPointsFile {
@@ -42,7 +48,7 @@ export function serializePointsFile(file: PointsFile): SerializedPointsFile {
       }
       return 0;
     });
-  return {
+  const out: SerializedPointsFile = {
     week: file.week,
     timestamp: file.timestamp,
     startTimestamp: file.startTimestamp,
@@ -58,6 +64,11 @@ export function serializePointsFile(file: PointsFile): SerializedPointsFile {
       ]),
     ),
   };
+  // Only emit when present & non-empty so a fresh snapshot's output is byte-identical.
+  if (file.appliedBonusHashes && file.appliedBonusHashes.length > 0) {
+    out.appliedBonusHashes = [...file.appliedBonusHashes];
+  }
+  return out;
 }
 
 export function parsePointsFile(raw: unknown): PointsFile {
@@ -70,13 +81,17 @@ export function parsePointsFile(raw: unknown): PointsFile {
       borrowUsd: BigInt(e.borrowUsd),
     });
   }
-  return {
+  const file: PointsFile = {
     week: obj.week,
     timestamp: obj.timestamp,
     startTimestamp: obj.startTimestamp,
     endTimestamp: obj.endTimestamp,
     userPoints,
   };
+  if (Array.isArray(obj.appliedBonusHashes)) {
+    file.appliedBonusHashes = [...obj.appliedBonusHashes];
+  }
+  return file;
 }
 
 export interface WeeklyPointsLoad {
