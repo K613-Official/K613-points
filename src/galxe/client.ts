@@ -79,7 +79,16 @@ async function gql<T>(
     },
     body: JSON.stringify({ query, variables }),
   });
-  const json = (await res.json()) as { data?: T; errors?: unknown };
+  const text = await res.text();
+  let json: { data?: T; errors?: unknown };
+  try {
+    json = JSON.parse(text) as { data?: T; errors?: unknown };
+  } catch {
+    const snippet = text.slice(0, 200).replace(/\s+/g, ' ').trim();
+    throw new Error(
+      `Galxe returned non-JSON (HTTP ${res.status} ${res.statusText}); body starts: ${snippet}`,
+    );
+  }
   if (json.errors) {
     throw new Error(`Galxe GraphQL error: ${JSON.stringify(json.errors)}`);
   }
@@ -90,7 +99,7 @@ async function gql<T>(
 }
 
 export function createGalxeClient(config: GalxeClientConfig): GalxeClient {
-  const pageSize = config.pageSize ?? 500;
+  const pageSize = config.pageSize ?? 50;
 
   return {
     async listCampaignIds(spaceId: string): Promise<string[]> {

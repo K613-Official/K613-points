@@ -40,18 +40,28 @@ async function run() {
       accessToken: env.GALXE_ACCESS_TOKEN,
     });
 
-    const campaignIds = await client.listCampaignIds(env.GALXE_SPACE_ID);
+    const explicit = env.GALXE_CAMPAIGN_IDS.split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const campaignIds =
+      explicit.length > 0 ? explicit : await client.listCampaignIds(env.GALXE_SPACE_ID);
     logger.info(
-      { spaceId: env.GALXE_SPACE_ID, campaigns: campaignIds.length },
+      {
+        spaceId: env.GALXE_SPACE_ID,
+        campaigns: campaignIds.length,
+        source: explicit.length > 0 ? 'GALXE_CAMPAIGN_IDS' : 'space.campaigns',
+      },
       'Fetched campaigns',
     );
 
-    const participantsByCampaign = await Promise.all(
-      campaignIds.map(async (campaignId) => ({
-        campaignId,
-        addresses: await client.listParticipantAddresses(campaignId),
-      })),
-    );
+    // Sequential by design: avoids Galxe rate-limit/WAF under parallel load
+    // and gives a clear per-campaign error if one fails.
+    const participantsByCampaign: { campaignId: string; addresses: string[] }[] = [];
+    for (const campaignId of campaignIds) {
+      // eslint-disable-next-line no-await-in-loop
+      const addresses = await client.listParticipantAddresses(campaignId);
+      participantsByCampaign.push({ campaignId, addresses });
+    }
 
     let priorState;
     try {

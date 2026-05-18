@@ -1,0 +1,11 @@
+{
+  "weekNumber": 2,
+  "bonuses": [
+    {
+      "address": "0xed94d9db6581c59de3875541c533f821c7228c3a",
+      "amount": "200000000000000000000",
+      "kind": "social",
+      "note": "galxe week 2"
+    }
+  ]
+}

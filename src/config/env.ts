@@ -89,6 +89,10 @@ const _cleanEnv = (source?: NodeJS.ProcessEnv) =>
       default: '86004',
       desc: 'Galxe space id to pull campaign participants from',
     }),
+    GALXE_CAMPAIGN_IDS: str({
+      default: '',
+      desc: 'Comma-separated Galxe campaign ids (explicit; space.campaigns is unreliable). If empty, falls back to space.campaigns enumeration.',
+    }),
   });
 
 export type Env = ReturnType<typeof _cleanEnv>;
