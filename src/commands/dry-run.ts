@@ -9,19 +9,19 @@ const program = new Command();
 program
   .name('dry-run')
   .description('snapshot + build-tree + print payload (no tx)')
-  .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10));
+  .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
+  .option('--in <dir>', 'snapshots directory', 'snapshots');
 
 program.parse();
 
-const opts = program.opts<{ week: number }>();
+const opts = program.opts<{ week: number; in: string }>();
 
 async function run() {
   try {
     logger.info({ week: opts.week }, 'Starting dry-run');
 
-    const snapshotsDir = 'snapshots';
     const treeData = JSON.parse(
-      await readFile(join(snapshotsDir, `week-${opts.week}`, 'tree.json'), 'utf-8'),
+      await readFile(join(opts.in, `week-${opts.week}`, 'tree.json'), 'utf-8'),
     );
 
     logger.info(

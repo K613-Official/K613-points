@@ -1,0 +1,65 @@
+{
+  "week": 3,
+  "weekStart": 1780172998,
+  "weekEnd": 1780777798,
+  "finalizedAt": "2026-05-19T15:07:31.782Z",
+  "totalPoints": "10156961292685759420857",
+  "rows": [
+    {
+      "rank": 1,
+      "address": "0x777905a8a5913d5cf46104d9e97eb4117e279958",
+      "minSupplyUsd": "2759585656300531552238",
+      "minBorrowUsd": "212871597000000000000",
+      "weeklyPoints": "3185328850300531552238",
+      "cumulativePoints": "8678638235601063104476"
+    },
+    {
+      "rank": 2,
+      "address": "0xed94d9db6581c59de3875541c533f821c7228c3a",
+      "minSupplyUsd": "127747642787158926215",
+      "minBorrowUsd": "9997259700000000000",
+      "weeklyPoints": "147742162187158926215",
+      "cumulativePoints": "583225531481030248645"
+    },
+    {
+      "rank": 3,
+      "address": "0xdec4e9f46f9a4f7af7ccb62c1512b086fa054829",
+      "minSupplyUsd": "115660392133772820000",
+      "minBorrowUsd": "4999989477319200000",
+      "weeklyPoints": "125660371088411220000",
+      "cumulativePoints": "367920654267950080000"
+    },
+    {
+      "rank": 4,
+      "address": "0x8f5a941fee1d7715952ee033d1e1cc49a89df197",
+      "minSupplyUsd": "73107604831714680000",
+      "minBorrowUsd": "13996216565476410000",
+      "weeklyPoints": "101100037962667500000",
+      "cumulativePoints": "300184874421320000000"
+    },
+    {
+      "rank": 5,
+      "address": "0x520932596eb8836ec5779946ff520350129c2f4d",
+      "minSupplyUsd": "65465492734353887400",
+      "minBorrowUsd": "457054889054256",
+      "weeklyPoints": "65466406844131995912",
+      "cumulativePoints": "196399220532395987736"
+    },
+    {
+      "rank": 6,
+      "address": "0xb2d6c4c8ef8dd874bb12a88944a223acb5e0c6ca",
+      "minSupplyUsd": "9997259700000000000",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "9997259700000000000",
+      "cumulativePoints": "29992940800000000000"
+    },
+    {
+      "rank": 7,
+      "address": "0x414afe25b83eb7b46cd554e5c96e7017052295d1",
+      "minSupplyUsd": "499862985000000000",
+      "minBorrowUsd": "49986298500000000",
+      "weeklyPoints": "599835582000000000",
+      "cumulativePoints": "599835582000000000"
+    }
+  ]
+}

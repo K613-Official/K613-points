@@ -11,16 +11,17 @@ program
   .name('verify')
   .description('Locally verify a single user proof for week N')
   .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
-  .requiredOption('--address <addr>', 'user address to verify');
+  .requiredOption('--address <addr>', 'user address to verify')
+  .option('--in <dir>', 'snapshots directory', 'snapshots');
 
 program.parse();
 
-const opts = program.opts<{ week: number; address: string }>();
+const opts = program.opts<{ week: number; address: string; in: string }>();
 
 async function run() {
   try {
     const treeData = JSON.parse(
-      await readFile(join('snapshots', `week-${opts.week}`, 'tree.json'), 'utf-8'),
+      await readFile(join(opts.in, `week-${opts.week}`, 'tree.json'), 'utf-8'),
     );
 
     const tree = StandardMerkleTree.load(treeData.tree);

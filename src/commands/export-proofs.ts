@@ -10,20 +10,21 @@ const program = new Command();
 program
   .name('export-proofs')
   .description('Dump per-user proof JSON files to snapshots/week-N/proofs/')
-  .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10));
+  .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
+  .option('--in <dir>', 'snapshots directory', 'snapshots');
 
 program.parse();
 
-const opts = program.opts<{ week: number }>();
+const opts = program.opts<{ week: number; in: string }>();
 
 async function run() {
   try {
     const treeData = JSON.parse(
-      await readFile(join('snapshots', `week-${opts.week}`, 'tree.json'), 'utf-8'),
+      await readFile(join(opts.in, `week-${opts.week}`, 'tree.json'), 'utf-8'),
     );
 
     const tree = StandardMerkleTree.load(treeData.tree);
-    const proofsDir = join('snapshots', `week-${opts.week}`, 'proofs');
+    const proofsDir = join(opts.in, `week-${opts.week}`, 'proofs');
     await mkdir(proofsDir, { recursive: true });
 
     let count = 0;

@@ -11,16 +11,17 @@ program
   .name('post-root')
   .description('Read tree.json for week N and call setMerkleRoot on the distributor')
   .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
-  .option('--confirm', 'must be passed to actually broadcast', false);
+  .option('--confirm', 'must be passed to actually broadcast', false)
+  .option('--in <dir>', 'snapshots directory', 'snapshots');
 
 program.parse();
 
-const opts = program.opts<{ week: number; confirm: boolean }>();
+const opts = program.opts<{ week: number; confirm: boolean; in: string }>();
 
 async function run() {
   try {
     const treeData = JSON.parse(
-      await readFile(join('snapshots', `week-${opts.week}`, 'tree.json'), 'utf-8'),
+      await readFile(join(opts.in, `week-${opts.week}`, 'tree.json'), 'utf-8'),
     );
 
     const root = treeData.root as `0x${string}`;
