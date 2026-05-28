@@ -1,67 +1,57 @@
 /**
- * Thin Galxe GraphQL boundary. ISOLATED ON PURPOSE: the exact query shape
- * (space -> campaigns, campaign -> participants) must be confirmed against the
- * live schema with a real access token — same approach used for the Aave
- * subgraph bring-up. All business logic lives in ./bonus.ts (pure, tested);
- * this file only fetches.
+ * Thin Galxe GraphQL boundary. Isolated on purpose; all business logic lives
+ * in ./bonus.ts (pure, tested).
  *
  * Auth: header `access-token` (space owner/admin token).
  * Endpoint default: https://graphigo.prd.galaxy.eco/query
  *
- * To verify the schema live:
- *   query { space(id:"86004"){ id campaigns(input:{first:50}){ list{ id name } } } }
- *   query { campaign(id:"<cid>"){ participants(first:1000){ list{ address }
- *           pageInfo{ endCursor hasNextPage } } } }
- * Adjust SPACE_CAMPAIGNS_QUERY / CAMPAIGN_PARTICIPANTS_QUERY below if fields differ.
+ * Why `space.loyaltyPointsRanks` and NOT `campaign.participants` × per-campaign
+ * weight: Galxe campaigns can have multiple sub-tasks, each with their own
+ * point reward. A wallet that completed 2 of 5 sub-tasks gets less than the
+ * campaign's headline `loyaltyPoints`. The leaderboard exposes the real
+ * earned total per address aggregated across all quests/sub-tasks in the
+ * space — that's the only correct source.
  */
 
+export interface AddressPoints {
+  /** Lowercased EVM address. */
+  address: string;
+  /** Actual earned loyalty points for this space (sum across all sub-tasks). */
+  points: number;
+}
+
 export interface GalxeClient {
-  listCampaignIds(spaceId: string): Promise<string[]>;
-  listParticipantAddresses(campaignId: string): Promise<string[]>;
+  /** Paginates the space leaderboard, returning every address with > 0 points. */
+  listAddressPoints(spaceId: string): Promise<AddressPoints[]>;
 }
 
 export interface GalxeClientConfig {
   url: string;
   accessToken: string;
-  /** Page size for participant pagination. */
+  /** Page size for leaderboard pagination. Galxe accepts up to ~50–100. */
   pageSize?: number;
 }
 
-const SPACE_CAMPAIGNS_QUERY = `
-  query SpaceCampaigns($id: Int!) {
+// IMPORTANT: use `cursorAfter`, NOT `after`. The `after` parameter on
+// `loyaltyPointsRanks` is a Galxe API bug — it returns the SAME page with the
+// SAME endCursor and hasNextPage=true forever (infinite loop). `cursorAfter`
+// is the working parameter discovered by probing the live API.
+const LOYALTY_RANKS_QUERY = `
+  query SpaceLoyaltyRanks($id: Int!, $first: Int!, $cursorAfter: String) {
     space(id: $id) {
-      id
-      campaigns(input: { first: 200 }) {
-        list { id name }
+      loyaltyPointsRanks(first: $first, cursorAfter: $cursorAfter) {
+        list { points address { address } }
+        pageInfo { endCursor hasNextPage }
       }
     }
   }
 `;
 
-const CAMPAIGN_PARTICIPANTS_QUERY = `
-  query CampaignParticipants($id: ID!, $first: Int!, $after: String) {
-    campaign(id: $id) {
-      participants {
-        participants(first: $first, after: $after) {
-          list { address { address } }
-          pageInfo { endCursor hasNextPage }
-        }
-      }
-    }
-  }
-`;
-
-interface SpaceCampaignsResp {
-  space?: { campaigns?: { list?: Array<{ id: string }> } };
-}
-
-interface ParticipantsResp {
-  campaign?: {
-    participants?: {
-      participants?: {
-        list?: Array<{ address?: { address?: string } }>;
-        pageInfo?: { endCursor: string | null; hasNextPage: boolean };
-      };
+interface LoyaltyRanksResp {
+  space?: {
+    loyaltyPointsRanks?: {
+      list?: Array<{ points?: number | null; address?: { address?: string } }>;
+      pageInfo?: { endCursor: string | null; hasNextPage: boolean };
     };
   };
 }
@@ -102,38 +92,37 @@ export function createGalxeClient(config: GalxeClientConfig): GalxeClient {
   const pageSize = config.pageSize ?? 50;
 
   return {
-    async listCampaignIds(spaceId: string): Promise<string[]> {
-      const data: SpaceCampaignsResp = await gql<SpaceCampaignsResp>(
-        config,
-        SPACE_CAMPAIGNS_QUERY,
-        { id: Number(spaceId) },
-      );
-      return (data.space?.campaigns?.list ?? []).map((c) => c.id);
-    },
-
-    async listParticipantAddresses(campaignId: string): Promise<string[]> {
-      const out: string[] = [];
-      let after: string | null = null;
-      // Cursor pagination: sequential by necessity (next page needs prev cursor).
+    async listAddressPoints(spaceId: string): Promise<AddressPoints[]> {
+      const out: AddressPoints[] = [];
+      let cursorAfter: string | null = null;
+      const seenCursors = new Set<string>();
+      // Cursor pagination: next page needs prev cursor, so sequential.
       for (;;) {
         // eslint-disable-next-line no-await-in-loop
-        const data: ParticipantsResp = await gql<ParticipantsResp>(
-          config,
-          CAMPAIGN_PARTICIPANTS_QUERY,
-          { id: campaignId, first: pageSize, after },
-        );
-
-        const conn = data.campaign?.participants?.participants;
+        const data: LoyaltyRanksResp = await gql<LoyaltyRanksResp>(config, LOYALTY_RANKS_QUERY, {
+          id: Number(spaceId),
+          first: pageSize,
+          cursorAfter,
+        });
+        const conn = data.space?.loyaltyPointsRanks;
         for (const row of conn?.list ?? []) {
-          const a = row.address?.address;
-          if (a) {
-            out.push(a);
+          const addr = row.address?.address;
+          const pts = row.points ?? 0;
+          if (addr && pts > 0) {
+            out.push({ address: addr.toLowerCase(), points: pts });
           }
         }
-        if (!conn?.pageInfo?.hasNextPage || !conn.pageInfo.endCursor) {
+        const next = conn?.pageInfo?.endCursor;
+        if (!conn?.pageInfo?.hasNextPage || !next) {
           break;
         }
-        after = conn.pageInfo.endCursor;
+        // Defensive: if Galxe ever regresses to a stuck cursor, fail loudly
+        // instead of looping forever (we hit this once with `after`).
+        if (seenCursors.has(next)) {
+          throw new Error(`Galxe loyaltyPointsRanks pagination stuck at cursor ${next}`);
+        }
+        seenCursors.add(next);
+        cursorAfter = next;
       }
       return out;
     },

@@ -2,10 +2,14 @@ import type { ManualBonusList } from '../snapshot/manual-bonuses.js';
 
 export type Address = `0x${string}`;
 
-/** Live Galxe data: which addresses have completed each campaign right now. */
-export interface CampaignParticipants {
-  campaignId: string;
-  addresses: string[];
+/** 1 point in our 18-decimal fixed-point unit. */
+export const POINT = 10n ** 18n;
+
+/** A single (address, total loyalty points) row from Galxe's leaderboard. */
+export interface AddressPointsRow {
+  address: string;
+  /** Total points earned by this address in the space (Galxe-aggregated). */
+  points: number;
 }
 
 /**
@@ -25,11 +29,10 @@ export interface SerializedCreditedState {
 
 export interface ComputeInput {
   weekNumber: number;
-  participantsByCampaign: readonly CampaignParticipants[];
-  /** Address -> total Galxe points already credited in prior weeks. */
+  /** Current Galxe leaderboard for the space (address → total points). */
+  leaderboard: readonly AddressPointsRow[];
+  /** Address → total Galxe points already credited in prior weeks (in 1e18-wei). */
   priorCredited: ReadonlyMap<Address, bigint>;
-  /** campaignId -> points weight. */
-  weightFor: (campaignId: string) => bigint;
 }
 
 export interface ComputeResult {
@@ -54,22 +57,23 @@ function byAddr(a: string, b: string): number {
 }
 
 /**
- * Reconcile live Galxe participation against what was already credited.
+ * Reconcile the live Galxe leaderboard against what was already credited.
  *
- * desired[addr] = Σ weight(campaign) over campaigns addr completed.
- * delta[addr]   = max(0, desired - priorCredited)   (never claws back).
- * Emits only positive deltas as a `social` ManualBonusList for week N;
+ * desired[addr] = leaderboard.points × POINT       (Galxe-authoritative total).
+ * delta[addr]   = max(0, desired - priorCredited)  (never claws back).
+ *
+ * Emits only positive deltas as a `social` ManualBonusList for week N and
  * returns the new cumulative `credited` map to persist.
  */
 export function computeGalxeBonus(input: ComputeInput): ComputeResult {
   const desired = new Map<Address, bigint>();
-  for (const { campaignId, addresses } of input.participantsByCampaign) {
-    const w = input.weightFor(campaignId);
-    // Dedup within a campaign: a wallet completing it counts once.
-    const unique = new Set(addresses.map(lc));
-    for (const addr of unique) {
-      desired.set(addr, (desired.get(addr) ?? 0n) + w);
+  for (const row of input.leaderboard) {
+    if (row.points <= 0) {
+      continue;
     }
+    const addr = lc(row.address);
+    // Last write wins on dup addresses (leaderboard should be unique anyway).
+    desired.set(addr, BigInt(Math.trunc(row.points)) * POINT);
   }
 
   const credited = new Map<Address, bigint>();
@@ -77,8 +81,13 @@ export function computeGalxeBonus(input: ComputeInput): ComputeResult {
     credited.set(lc(addr), amt);
   }
 
+  // Also iterate over addresses that exist only in priorCredited (so monotonic
+  // credited carries them forward even when they drop off the leaderboard).
+  const allAddresses = new Set<Address>([...desired.keys(), ...credited.keys()]);
+
   const bonuses: ManualBonusList['bonuses'] = [];
-  for (const [addr, want] of [...desired.entries()].sort(([a], [b]) => byAddr(a, b))) {
+  for (const addr of [...allAddresses].sort(byAddr)) {
+    const want = desired.get(addr) ?? 0n;
     const prior = credited.get(addr) ?? 0n;
     const delta = want - prior;
     if (delta > 0n) {
@@ -89,7 +98,7 @@ export function computeGalxeBonus(input: ComputeInput): ComputeResult {
         note: `galxe week ${input.weekNumber}`,
       });
     }
-    // Monotonic: credited never decreases even if a completion disappears.
+    // Monotonic: credited never decreases even if a leaderboard entry shrinks.
     credited.set(addr, prior > want ? prior : want);
   }
 

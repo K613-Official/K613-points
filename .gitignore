@@ -19,3 +19,5 @@ npm-debug.log*
 # OS
 Thumbs.db
 docs/
+.claude
+

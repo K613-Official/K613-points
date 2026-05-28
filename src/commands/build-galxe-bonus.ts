@@ -4,7 +4,6 @@ import { mkdir, readFile, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import { logger } from '../util/logger.js';
 import { cleanEnv } from '../config/env.js';
-import { weightFor } from '../config/galxe-weights.js';
 import { createGalxeClient } from '../galxe/client.js';
 import {
   computeGalxeBonus,
@@ -18,7 +17,7 @@ const program = new Command();
 program
   .name('build-galxe-bonus')
   .description(
-    'Pull Galxe space participants and emit inputs/galxe-week-N.json (feeds apply-bonuses)',
+    'Pull Galxe space loyalty-points leaderboard and emit inputs/galxe-week-N.json (feeds apply-bonuses)',
   )
   .requiredOption('--week <n>', 'week number (1-indexed)', (v) => Number.parseInt(v, 10))
   .option('--out <dir>', 'inputs directory', 'inputs')
@@ -40,28 +39,16 @@ async function run() {
       accessToken: env.GALXE_ACCESS_TOKEN,
     });
 
-    const explicit = env.GALXE_CAMPAIGN_IDS.split(',')
-      .map((s) => s.trim())
-      .filter(Boolean);
-    const campaignIds =
-      explicit.length > 0 ? explicit : await client.listCampaignIds(env.GALXE_SPACE_ID);
+    const leaderboard = await client.listAddressPoints(env.GALXE_SPACE_ID);
+    const totalLeaderboardPoints = leaderboard.reduce((acc, r) => acc + r.points, 0);
     logger.info(
       {
         spaceId: env.GALXE_SPACE_ID,
-        campaigns: campaignIds.length,
-        source: explicit.length > 0 ? 'GALXE_CAMPAIGN_IDS' : 'space.campaigns',
+        addresses: leaderboard.length,
+        totalPoints: totalLeaderboardPoints,
       },
-      'Fetched campaigns',
+      'Fetched Galxe loyalty leaderboard',
     );
-
-    // Sequential by design: avoids Galxe rate-limit/WAF under parallel load
-    // and gives a clear per-campaign error if one fails.
-    const participantsByCampaign: { campaignId: string; addresses: string[] }[] = [];
-    for (const campaignId of campaignIds) {
-      // eslint-disable-next-line no-await-in-loop
-      const addresses = await client.listParticipantAddresses(campaignId);
-      participantsByCampaign.push({ campaignId, addresses });
-    }
 
     let priorState;
     try {
@@ -75,9 +62,8 @@ async function run() {
 
     const { bonusList, credited } = computeGalxeBonus({
       weekNumber: opts.week,
-      participantsByCampaign,
+      leaderboard,
       priorCredited: priorState.credited,
-      weightFor,
     });
 
     const bonusPath = join(opts.out, `galxe-week-${opts.week}.json`);
