@@ -1,0 +1,1201 @@
+{
+  "week": 2,
+  "weekStart": 1779926400,
+  "weekEnd": 1780531200,
+  "finalizedAt": "2026-06-03T23:31:24.910Z",
+  "totalPoints": "205469188348887443969307",
+  "rows": [
+    {
+      "rank": 1,
+      "address": "0x7dd74359d9d35bc6e16d47c5b39b215cee401287",
+      "minSupplyUsd": "33017247972532715440000",
+      "minBorrowUsd": "12000295034961491560000",
+      "weeklyPoints": "57017838042455698560000",
+      "cumulativePoints": "111762705378251420320000"
+    },
+    {
+      "rank": 2,
+      "address": "0xf34cbcc53757f9ebe078978a0ee2581605d5e5bf",
+      "minSupplyUsd": "22244569184986125498402",
+      "minBorrowUsd": "9991384700000000000000",
+      "weeklyPoints": "42227338584986125498402",
+      "cumulativePoints": "84047024564756570448599"
+    },
+    {
+      "rank": 3,
+      "address": "0xa883f0e08615ce4783c4a47779125c8a433de8a8",
+      "minSupplyUsd": "1181155528242212786487",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "1386155528242212786487",
+      "cumulativePoints": "1631155528242212786487"
+    },
+    {
+      "rank": 4,
+      "address": "0xbd45cd12488818072ebb09e936045945d5efe73d",
+      "minSupplyUsd": "786437578054835040000",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "786437578054835040000",
+      "cumulativePoints": "786437578054835040000"
+    },
+    {
+      "rank": 5,
+      "address": "0xb1ad60a07b284e56f6a825c6d1e860d4b00508dd",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "510000000000000000000",
+      "cumulativePoints": "510000000000000000000"
+    },
+    {
+      "rank": 6,
+      "address": "0x4a2763570edeeeb78e0174aeae6bedde6f143398",
+      "minSupplyUsd": "30133862058729",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "225000030133862058729",
+      "cumulativePoints": "360000030133862058729"
+    },
+    {
+      "rank": 7,
+      "address": "0x282cbe7e4ed3f7b5fd2cb4307e95875fb4120613",
+      "minSupplyUsd": "612000000000000000",
+      "minBorrowUsd": "265200000000000000",
+      "weeklyPoints": "56142400000000000000",
+      "cumulativePoints": "311142400000000000000"
+    },
+    {
+      "rank": 8,
+      "address": "0x3ce020839bca572d67fbf2029aa0b7bf43744122",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "260000000000000000000",
+      "cumulativePoints": "260000000000000000000"
+    },
+    {
+      "rank": 9,
+      "address": "0xa8692e1e65c9372fd2470d710b0f76a734a80874",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "235000000000000000000",
+      "cumulativePoints": "235000000000000000000"
+    },
+    {
+      "rank": 10,
+      "address": "0xed94d9db6581c59de3875541c533f821c7228c3a",
+      "minSupplyUsd": "98413243514747303212",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "98413243514747303212",
+      "cumulativePoints": "206213017749381633212"
+    },
+    {
+      "rank": 11,
+      "address": "0xea3c147db011e223c1067f99ce0b56ed6da5efb2",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "205000000000000000000",
+      "cumulativePoints": "205000000000000000000"
+    },
+    {
+      "rank": 12,
+      "address": "0x8270298caf64de076cb632cdcfdaa80257559d6d",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "160000000000000000000",
+      "cumulativePoints": "160000000000000000000"
+    },
+    {
+      "rank": 13,
+      "address": "0x7923043bb2ba4cadb177214ca71cb481c56c9a44",
+      "minSupplyUsd": "71400024226979575551",
+      "minBorrowUsd": "43984179518049265149",
+      "weeklyPoints": "159368383263078105849",
+      "cumulativePoints": "159368383263078105849"
+    },
+    {
+      "rank": 14,
+      "address": "0x3fedf433f82332bf096b66161645d0d15d1fc884",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "80000000000000000000"
+    },
+    {
+      "rank": 15,
+      "address": "0x0798872f5548fda38571ffab2932908b780c0008",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "65000000000000000000"
+    },
+    {
+      "rank": 16,
+      "address": "0x0a5634fcd02088b04ace88c29ae4bc2fe35379e9",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 17,
+      "address": "0x15c20c042fbfb3081216e4a84f7ccd8ffae13c2e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "40000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 18,
+      "address": "0x2fb97a0ff21de782068408832c0fee135db1982d",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 19,
+      "address": "0x3ce37e3ec52e91b1b3cf5848307da66f8e261e1e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 20,
+      "address": "0x41c1de88bcc454027818feb1f47811e1eb378b83",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 21,
+      "address": "0x525868063dfb084a3542e2dfeb60d81e21d79c31",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "35000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 22,
+      "address": "0x7c532695edd5910d95097883d956a117fac30628",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 23,
+      "address": "0x89d78f965a784633fccc8171472dda8b1e8ba3d6",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "35000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 24,
+      "address": "0x8b50fd20f04165bd3f35088fb601ff3ec0d513c0",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "40000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 25,
+      "address": "0x9fb0b537c3a4f64067e13056cf48b0f5715b3fce",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 26,
+      "address": "0xa41a035b31caa24c4559390aa17a5602267fad19",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 27,
+      "address": "0xaa090889e0bd2376841019dbd097a158884c6a18",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 28,
+      "address": "0xbd680338b781ccbdaafdf25e902f54b4a4974600",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 29,
+      "address": "0xbe8192149a88a3c824c6fb1fc90e86379061192c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 30,
+      "address": "0xd7a5ea9e8c52bfc1f78b50ad225331e1c9139f1e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 31,
+      "address": "0xde58e7a03f5f1a868fa974b60acde04285cec7ca",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 32,
+      "address": "0xe53a3efe7cb8931cccdcf6b165545586e467adad",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 33,
+      "address": "0xe97cd024d46fa97c42793ff6b8c80e6bfe73b0b9",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 34,
+      "address": "0xf01f59bd8989c3423182c3505a759f292d57121d",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "30000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 35,
+      "address": "0xf881d1c94610b592946673f8eba2715546f52b02",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "60000000000000000000",
+      "cumulativePoints": "60000000000000000000"
+    },
+    {
+      "rank": 36,
+      "address": "0x0abec9940d16cb56ea9a0f83e2647b80dede173e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 37,
+      "address": "0x23d0e6a9ba024505cfd75d206f5761420ec369e6",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 38,
+      "address": "0x40accf778fb09477bda1043835fda1cb3df523dd",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "55000000000000000000",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 39,
+      "address": "0x456bfc384757c792c2658f7f08fdbf97d042433d",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 40,
+      "address": "0x4fc785032ecf864ccfc4ef7aa9a87be2a27cdbcd",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 41,
+      "address": "0x9d9c1715c66cbee0566f509b8db7344095d93622",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 42,
+      "address": "0xcf8db58a5525ed624ea3faef3f90eb3341840714",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 43,
+      "address": "0xfbc38e7d9fcda59c45c92c7e75f1b24994ae3dba",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "55000000000000000000"
+    },
+    {
+      "rank": 44,
+      "address": "0x0167208feec79808aa6de7a497f6cd853a8fcfd0",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 45,
+      "address": "0x09a06fd081d659240a336c1a8412d802a739aa47",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 46,
+      "address": "0x2712d86c8812f3eb75f200be2ee878810bf03516",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 47,
+      "address": "0x2783d01267103b0537aad8b57a9d3dc3ba8db3e3",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 48,
+      "address": "0x281272775d83e3db522e416f49845641586f4602",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 49,
+      "address": "0x2ba7126a0dedd67e2382709cd5063143d7b59f0c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 50,
+      "address": "0x3314c804ff9e462e7345ffeab6b013fa251e2c49",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 51,
+      "address": "0x357bfe2b3d98ba33194e921355ef5ba3497fa92e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 52,
+      "address": "0x3f36917bbce11c0b057d9034a12121964fb2ce87",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 53,
+      "address": "0x480abe4c94f56adcdcf9916105a17fa0db9cddac",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 54,
+      "address": "0x6daa630efe5b23d28b4b8cfe93c406827967ca70",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 55,
+      "address": "0x72a983236209490567a694d33c8ce6c2f2942290",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 56,
+      "address": "0x7415b5ee6ef35aa79906a52eb7167c9ba594e98e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 57,
+      "address": "0x77d32842622f66f8ae9295ae1a708ef955543843",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 58,
+      "address": "0x7a16abe331efaa6e88871b0c88a219749f7c8e5c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 59,
+      "address": "0x8a389432ec7c196e3db5b93681c7f202c22b17cb",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 60,
+      "address": "0x901a62a4a4abf09f53019767daa872f8ee1399bc",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 61,
+      "address": "0x92f7fe00778971a33c023c5e25c02456aee8b3dc",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 62,
+      "address": "0x9417099e844285fc4f6312676c30672eae12b05a",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 63,
+      "address": "0xa53f0ec4771df703e7e1b558abaed6cd421f088a",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 64,
+      "address": "0xa756bf2529ef4d1318728c1bb412b34a4fdf0439",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 65,
+      "address": "0xa85fc614b38e56041f1a5f0c3078f88e449c7479",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 66,
+      "address": "0xb2b1f686833717068d6c8111ce2e0104d4686699",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 67,
+      "address": "0xb923a90a1bf7eaadfcde758b8912fa99e7231e69",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 68,
+      "address": "0xb955bccc2d0db2785e1bb9668723024a123fe0d1",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 69,
+      "address": "0xbc15496c6c0a812985c53a75719630fb416777f6",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 70,
+      "address": "0xd20e650cd83ee3bceeecfbba69e6bda443daea2c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 71,
+      "address": "0xd273ba51c45e0bd21a3faade660494c1834d0f5c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 72,
+      "address": "0xe98b9b002e2258d1b0c0eb0748bb586e50b831d8",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 73,
+      "address": "0xed75fc2a99748888c648831120ac11fc868aa76f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 74,
+      "address": "0xeecc5f5c0704c516dbb832d18b988a11e364637b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "30000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 75,
+      "address": "0xefd0262ee24ea875facacaf6ec0f97b4efe270a1",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 76,
+      "address": "0xf260348d0a0617421469cb3f52284ce84e0fd709",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 77,
+      "address": "0xf70f5a6ae0ec5b01879460a9efbc87d3e3725d4a",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 78,
+      "address": "0xfec788768082b7ca77f70aef3622ea900bb6a3cb",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "50000000000000000000",
+      "cumulativePoints": "50000000000000000000"
+    },
+    {
+      "rank": 79,
+      "address": "0x07208d106db25de33027537eee74ecd07429e486",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "45000000000000000000"
+    },
+    {
+      "rank": 80,
+      "address": "0x66157bf20eac23b1bc7230a5f6829dc16c2692a5",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "45000000000000000000"
+    },
+    {
+      "rank": 81,
+      "address": "0x3b48ec27ad2b0934c9741529bfd5694b2f7ba856",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "40000000000000000000",
+      "cumulativePoints": "40000000000000000000"
+    },
+    {
+      "rank": 82,
+      "address": "0x65fe52bc0e28a679513bc2781d2aebac0ee2795a",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "40000000000000000000"
+    },
+    {
+      "rank": 83,
+      "address": "0x0caf99f443eb5462427561067dbf3fee53e5fd1f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "35000000000000000000",
+      "cumulativePoints": "35000000000000000000"
+    },
+    {
+      "rank": 84,
+      "address": "0x5d90d15bd3fd7b6d3aed64a2b1b66929a0197e59",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "35000000000000000000"
+    },
+    {
+      "rank": 85,
+      "address": "0x8c9dbd4272df2bc6dbdf9091109889174fbfc3ab",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "35000000000000000000"
+    },
+    {
+      "rank": 86,
+      "address": "0x28135235541742bc1424d10b5de1963292f0c1e4",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 87,
+      "address": "0x50c55d3448f528b699f7cde2f30b5851ed7cdb69",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "30000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 88,
+      "address": "0x54187a9ec2ebdae457e3a292ed15728c6532f613",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "30000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 89,
+      "address": "0x60bdc4db5b0365013980e23a372d0e1cb1b03ed4",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 90,
+      "address": "0x7aa3c55a94884eb452e3215e1ad7b75b918fe389",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 91,
+      "address": "0x8f2e62f6d088176bcf9cd900ad403ca82d79347d",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 92,
+      "address": "0x978010cbe12fdc328bf2919fbb663438ed03e424",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 93,
+      "address": "0xc95c0346cd7326348169bf66d7c2a936f0d444a2",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "30000000000000000000"
+    },
+    {
+      "rank": 94,
+      "address": "0x11b1d114483319cc4394ef8eee35a024c51dc6ef",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "25000000000000000000",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 95,
+      "address": "0x246e11ba7a5a87d99b2ecd265ad3bf1390cbd29c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 96,
+      "address": "0x36eb6ba7a75b1a7e0596f8fc682c695c41d9e507",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 97,
+      "address": "0x427a60909f776b68e55b528d18f6371183fe3762",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 98,
+      "address": "0x4616abf78e1c5e41154a5445833d770e5b66d34e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 99,
+      "address": "0x565f1b37de350208b3d23369d833ed487ec18375",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 100,
+      "address": "0x5ba1342f0ed04cf301f1749a3b2a124fe8d6f0ae",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 101,
+      "address": "0x5bd1f92da8781e1e6a0748a009daccf30e14085b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 102,
+      "address": "0x7980b95073b1df773048954610e11ce66ddbbf36",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "25000000000000000000",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 103,
+      "address": "0xa4d057b82aa5c24709eb200fe0887956eb214092",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 104,
+      "address": "0xaf1df49b72fe8f5b89adfeb0ccca0f70b5e7be14",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 105,
+      "address": "0xb9cc3ef4377479f97ebe1ad9a7e4e658c6fb16af",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "25000000000000000000",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 106,
+      "address": "0xd69de4b88440c58c0bf8e5f95d5476570e01ca52",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 107,
+      "address": "0xe8957a222204284ab133799e900b392878915a9f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 108,
+      "address": "0xee95ee82e4e5a6cbb5156b2dbfdb63edc77efee0",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 109,
+      "address": "0xf2dac618057717736fa132033e187138328256ca",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 110,
+      "address": "0xf4b71f9f8bfab25831f53a400299f5e5139c8629",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "25000000000000000000"
+    },
+    {
+      "rank": 111,
+      "address": "0x5f1ec9bc6d3847d8ad98dfc227d4ec8d69a4f1be",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "20000000000000000000"
+    },
+    {
+      "rank": 112,
+      "address": "0x65408a4be8244cd5f87d602bdeba1c528d15b312",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "20000000000000000000"
+    },
+    {
+      "rank": 113,
+      "address": "0x972143fa009b966543cbc7943370bda9b8d41b1f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "20000000000000000000"
+    },
+    {
+      "rank": 114,
+      "address": "0xba0e4eb2d4c6927bbf3b87ac1e4769374aae709f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "20000000000000000000"
+    },
+    {
+      "rank": 115,
+      "address": "0x1357be3f8ba486146f34f782eb14346747ff5d80",
+      "minSupplyUsd": "8192177112028206326",
+      "minBorrowUsd": "999639890000000000",
+      "weeklyPoints": "10191456892028206326",
+      "cumulativePoints": "19176556005843817989"
+    },
+    {
+      "rank": 116,
+      "address": "0x53da33f96ecffe1cdf3842883c9ba3ba3b49c14b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "15000000000000000000"
+    },
+    {
+      "rank": 117,
+      "address": "0x79c778c35b8d12b3a79749a68dc2dfd3f7e1f6ff",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "15000000000000000000"
+    },
+    {
+      "rank": 118,
+      "address": "0x1b9826b1fe5397c0cb5455fbb8d7aa2d4e4b282e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 119,
+      "address": "0x27b60f36c8f7f55e0c41a9b4033d730647eb002b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 120,
+      "address": "0x286438884aadabd18058eda12efe3fdff840eff3",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 121,
+      "address": "0x2d4ca8540b2cfdcc040a7aef3905f85fc7796160",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 122,
+      "address": "0x3f4bef3311893aaa5847a16a7d8cebb74279983c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 123,
+      "address": "0x53707072d0a6f27215b8b9301bb4685be8f516f2",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 124,
+      "address": "0x5c47952bc0e6b41688635449a30317c7e885d4f1",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 125,
+      "address": "0x60f0fe4f7c271b5e8a0f211aa7bd98285dca111b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 126,
+      "address": "0x628c9c826a0da190731e27cc9476174e20fe55fe",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 127,
+      "address": "0x73b1fd1cd7c00e8eda3356ed6fd00eab1c77350e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 128,
+      "address": "0x95752f215e4891abf3853bed53148b604761ece0",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 129,
+      "address": "0xaf0dfdfa4dee379ce6f1fc562bacdd7a43a0f5a3",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 130,
+      "address": "0xbe4c13cd9a94f2ab6a68560ccafeec1b81546bec",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 131,
+      "address": "0xc0acf511babc340fd0ff969e112c4c45e31c6c7c",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 132,
+      "address": "0xc5829d033bb3bc99b2b0581e7f44cf349a0c7573",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 133,
+      "address": "0xda874f9e8ea7bc73a314742b03c66377e4fe35e0",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "10000000000000000000",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 134,
+      "address": "0xf9f8ab97c46564a05b77ec2e0c79d6ed8d043337",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "10000000000000000000"
+    },
+    {
+      "rank": 135,
+      "address": "0xf18fcc2dcdcdc197b036b290becbed692b9d2678",
+      "minSupplyUsd": "3139645756000000000",
+      "minBorrowUsd": "711967796000000000",
+      "weeklyPoints": "4563581348000000000",
+      "cumulativePoints": "5862911185000000000"
+    },
+    {
+      "rank": 136,
+      "address": "0x164cd85f615d2331507d54d52cfd675fe8dfbc83",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 137,
+      "address": "0x354aa13e3c9de951e89293b3cbc9c8cfa81245a6",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 138,
+      "address": "0x4862e042ca1edb6e16792f2c77937a56e207cd75",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 139,
+      "address": "0x5e91692611d4b350e5fcdb773c02c26731cd770b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "0",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 140,
+      "address": "0x6206c1a33fac30a575409f5d0d82b07777dd2eff",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 141,
+      "address": "0x76bec864ae24cd07302b980bc20319a9224b24c7",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 142,
+      "address": "0x76c07087bb4eb86d2516081f79f400507ac2370f",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 143,
+      "address": "0x7b6a9689bb5d714653e0ebf13494d1791267fad3",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 144,
+      "address": "0x7ed60ddc1b0983870f0d608aefd5bb5c0f815b7e",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 145,
+      "address": "0xa4eac1d3bc0324e6975c882611cac688e597020b",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 146,
+      "address": "0xfa1c3cf4c0563133cd09714d4c3b0fd27cdd5b11",
+      "minSupplyUsd": "0",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "5000000000000000000",
+      "cumulativePoints": "5000000000000000000"
+    },
+    {
+      "rank": 147,
+      "address": "0xdec4e9f46f9a4f7af7ccb62c1512b086fa054829",
+      "minSupplyUsd": "102000000000000000",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "102000000000000000",
+      "cumulativePoints": "102000000000000000"
+    },
+    {
+      "rank": 148,
+      "address": "0xd3e956e24157d64aca554ec644d377826fe12d77",
+      "minSupplyUsd": "744480840407",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "744480840407",
+      "cumulativePoints": "744480840407"
+    },
+    {
+      "rank": 149,
+      "address": "0x3d4207175681997b89709672241a63edacbc38a7",
+      "minSupplyUsd": "234444520913",
+      "minBorrowUsd": "0",
+      "weeklyPoints": "234444520913",
+      "cumulativePoints": "500758918035"
+    }
+  ]
+}
