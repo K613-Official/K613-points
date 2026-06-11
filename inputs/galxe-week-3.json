@@ -1,0 +1,671 @@
+{
+  "weekNumber": 3,
+  "bonuses": [
+    {
+      "address": "0x00fc238bca0248e77563ff9d48113b08187ef146",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x056882a93c40613e98d1d6f8b1682faa93f21ca3",
+      "amount": "45000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x0798872f5548fda38571ffab2932908b780c0008",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x082be62449d16785bc8de71cdcfce421aeb15744",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x0a65c215ce8abc782a4b763fffa10a41652ac42c",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x0dff98053ef265671fcfcf1d71dfdc17001454eb",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x100f62c77943e3ece4f8954465eff5392825f3e4",
+      "amount": "65000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x11b1d114483319cc4394ef8eee35a024c51dc6ef",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x1349022a660e6fc6272ad0cf031445cb2c83640b",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x15cac152fda64bd4284db59639de12b6e4f131d8",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x1648d672182c663b2caa9de40913c8bafba7f545",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x1ad3aa7ad295f2c5e4647553a746dc1659aa731e",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x220fa5786ec6f05bb2b3d65278e1857519d6c2b6",
+      "amount": "45000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x2783d01267103b0537aad8b57a9d3dc3ba8db3e3",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x2b29744dd3d3ce8e3e2880e477d4c8b43ac57481",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x2e6585cf7e6f7533a634306216d826748b3b8c02",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x2ecaa64bdd1996a9cb7360a4017de9e0d071ba93",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x303264e24970cc88508823b0bbdd128033ff672f",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x354aa13e3c9de951e89293b3cbc9c8cfa81245a6",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x3b48ec27ad2b0934c9741529bfd5694b2f7ba856",
+      "amount": "25000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x3ce020839bca572d67fbf2029aa0b7bf43744122",
+      "amount": "25000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x3e76a42c619e482ebe8acb91fe5a9b91d72a20fd",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x41c1de88bcc454027818feb1f47811e1eb378b83",
+      "amount": "25000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x42bb4c898ecb413d3a37036cec542a9632a0d5f8",
+      "amount": "275000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x43bc7733631e562fc00f122aa678b7571033dafe",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x4862e042ca1edb6e16792f2c77937a56e207cd75",
+      "amount": "60000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x4a2763570edeeeb78e0174aeae6bedde6f143398",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x4d32616ca5b50add91017a48d18f79d33bb3cdb8",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x50bdee072ddd502870ca45565c3a6478f799e2fd",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x525868063dfb084a3542e2dfeb60d81e21d79c31",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x5756e0573347d160c10b68c8c61894d5d2392f06",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x5ba1342f0ed04cf301f1749a3b2a124fe8d6f0ae",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x600a53451770ac75007a0786e29aac1c5469cad2",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x60bdc4db5b0365013980e23a372d0e1cb1b03ed4",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x6154d6d68698bbd08fe50d2bbf05437574eed520",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x6206c1a33fac30a575409f5d0d82b07777dd2eff",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x622468ffc2ba8b4166d24685abd5493cd13ec0bf",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x63a87e0e60a4e183e096bb4b7632712e0f8d3738",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x63bf2e5b4d835857e09f4c20368d0f33a3b2abf9",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x65fe52bc0e28a679513bc2781d2aebac0ee2795a",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x6df9dd25bc106942519ca6c6b05e227213151759",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x6e422b5b1fe297cee532e773346423f8763afd4c",
+      "amount": "65000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x711bc6b447a58e92ab99a15403f7c90a84e37056",
+      "amount": "65000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7335f83cb3f1da44aade5588be8d8eb1e1cb8fe0",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7356e5074feca1e2fe9e4779ce3275c3f275bb54",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x76c07087bb4eb86d2516081f79f400507ac2370f",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x79c778c35b8d12b3a79749a68dc2dfd3f7e1f6ff",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7b6a9689bb5d714653e0ebf13494d1791267fad3",
+      "amount": "30000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7c8cf0fc76997dd16262ac948b486cc2b314205e",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7e2fd5ca519318a3879c2fd8784993eea2cad1bf",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7efd5ba8c85c674016e2154e4739c20a9af81b44",
+      "amount": "65000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x7f14aee15e542c7b25b389203a1353657731b3a4",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8107d1ad7ea3c30839c24b2ec694b6e4186f891d",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x85f59090be8ddfbe570c0e5aa4cb14f04e3b67de",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8a46200ef724a5b425b9fe792c157323df0b8602",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8b50fd20f04165bd3f35088fb601ff3ec0d513c0",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8c660ef0fe909b78c8856e26c7722ac010fd333b",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8dbf28f00d51a9011a7b13a5610a95919dadec70",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8f2e62f6d088176bcf9cd900ad403ca82d79347d",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x8ff5a0ba429c11d477a5f9fd19e29ed8b7d17cb9",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x92ebb03df09aa3af4ce2c0d452d8902b2cd84d16",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x978010cbe12fdc328bf2919fbb663438ed03e424",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x990ebea0aed4025af6376fec136c3f6dd84771d3",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x99e3b7452a66bca68d3863f04ff332d5d89dbbec",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x9ca7be83741a9d24ca664b4f9b68aa2dbc74953b",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0x9cb7fc75b20ea18bb41aa2d37b8471e5ed3c2b99",
+      "amount": "70000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa2277cfda5c7c3a173bdd30dd2293d96ef8598d1",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa41a035b31caa24c4559390aa17a5602267fad19",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa49c640337f5f6b6ab67fc09855ab3be04e53ba0",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa4eac1d3bc0324e6975c882611cac688e597020b",
+      "amount": "50000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa6a9abd49968e702580c23b410096b75d8306361",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa85b53a872086f83077f260a45f6ac9608e39f2b",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa8692e1e65c9372fd2470d710b0f76a734a80874",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xa883f0e08615ce4783c4a47779125c8a433de8a8",
+      "amount": "265000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xab77e8eee65e6b622c62d08df0e476998acc4e60",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xaf8c0b288ac9f129ad5db3f2ac26529f0995ce0d",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb014d3dc193ec49c60a983d06c764c7fdba8c696",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb1ad60a07b284e56f6a825c6d1e860d4b00508dd",
+      "amount": "215000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb2ebb3c75b790218346dde744fef221487a470b7",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb61d9941ee723f51367525cb06670449775302fb",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb681c301ae7d6b6d4686fbc3bde80a713f03acd4",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xb955bccc2d0db2785e1bb9668723024a123fe0d1",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xbd680338b781ccbdaafdf25e902f54b4a4974600",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xbdc9bdccb135c4e837c121e95d04b6ebbec38e35",
+      "amount": "30000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xc0fcc39b482bfca9a1cba2878291c5b0f4b9cdaf",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xc21081c877524803f96550b8f7dd2fbeaa024793",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xc95c0346cd7326348169bf66d7c2a936f0d444a2",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xcce1d7b6522c0abf2e240101424954bedc27f278",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xcec4aef4e191307625f10c12fb5c1d1724d1ddb3",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xceec765627f44d18b55196a15d7581d5989d4fa7",
+      "amount": "40000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xd056eec09781903a0ca6ad858c8ace588ea07a12",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xd0b407c6087911c1a81dff7015a32ae92d3e7289",
+      "amount": "60000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xd148b4113e8c1aacb4f745b331b64925c6e6badf",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xd77eb97a9632ccdbee94360e829f7ffbfb79786f",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xd801ed903f07046546a97cdaccd21bf53021ee02",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xdb2cf4729109604f974cebeecaeeea9655b13725",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xdc6042b5388d443e1978f4f3fbbdb0be26f0e4e3",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xe2ee1f443f00b3580c3d82d496b53ffc0ea71bb0",
+      "amount": "75000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xe4513612fdd18b56c9a06b1950ec35dcf7eece2c",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xe4e8cda3be6dda3539a24c3810813911aa823686",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xe53a3efe7cb8931cccdcf6b165545586e467adad",
+      "amount": "15000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xe8957a222204284ab133799e900b392878915a9f",
+      "amount": "5000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xea3c147db011e223c1067f99ce0b56ed6da5efb2",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xeb1378b5c601c3f2020ca409ba5344d882342cf7",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xf4f8c4cd3db01c161e05631cf924f66cf2b92fdd",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xf5059fae34a98c10513c5f23d09ee9ff2021dab1",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xf6bfdef4752ef89d5d4fa5af586cee050eabfb62",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xf9bb14ddf1bc222f973a5be3bac4d367ccb56cf1",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xfa1c3cf4c0563133cd09714d4c3b0fd27cdd5b11",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xfa93bb19b797167f16c06f762b22e3d4a53e6295",
+      "amount": "10000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    },
+    {
+      "address": "0xfdf4df1f5a4102c4d0f3f90ccd654256353e83f6",
+      "amount": "55000000000000000000",
+      "kind": "social",
+      "note": "galxe week 3"
+    }
+  ]
+}
