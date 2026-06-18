@@ -1,0 +1,509 @@
+{
+  "week": 4,
+  "timestamp": "2026-06-18T07:43:13.782Z",
+  "startTimestamp": 1781136000,
+  "endTimestamp": 1781740800,
+  "userPoints": {
+    "0x051491e6490a70dda45f8e424b52a9d0071d8cf1": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x0798872f5548fda38571ffab2932908b780c0008": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x0a65c215ce8abc782a4b763fffa10a41652ac42c": {
+      "points": "25047804570000000000",
+      "supplyUsd": "43458700000000000",
+      "borrowUsd": "2172935000000000"
+    },
+    "0x1357be3f8ba486146f34f782eb14346747ff5d80": {
+      "points": "10755838330850427073",
+      "supplyUsd": "8756276330850427073",
+      "borrowUsd": "999781000000000000"
+    },
+    "0x1648d672182c663b2caa9de40913c8bafba7f545": {
+      "points": "200019862922070000000",
+      "supplyUsd": "13864090690000000",
+      "borrowUsd": "2999415690000000"
+    },
+    "0x1ed9ebada462e55e0128ef9d039f6f1d71eeab27": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x21fe04c057b563e483e5c012f9e992dd2fd3d93e": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x22376ac36151844e1a187c66b777b6311d9c7d40": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x22b0fa752fa64a0ac0a95590c8f9db8c29acc4d1": {
+      "points": "20000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x2783d01267103b0537aad8b57a9d3dc3ba8db3e3": {
+      "points": "45000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x282cbe7e4ed3f7b5fd2cb4307e95875fb4120613": {
+      "points": "226499357191484998881",
+      "supplyUsd": "934394091484998881",
+      "borrowUsd": "282481550000000000"
+    },
+    "0x2a195f78f6c6652644e4e181d71a9bb4c0a65de5": {
+      "points": "45000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x2b7bf0f30867991ae05c39f1fb9ec1e1e7fbc218": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x2d99ad34038746b528810cd39461baf144795c66": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x310aa04324b564fb1178c92c1e7d1dc14c51669d": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x354aa13e3c9de951e89293b3cbc9c8cfa81245a6": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3607b0a442efbcc3c7a216f8ecaca01fd0c13bee": {
+      "points": "8691740000000000",
+      "supplyUsd": "8691740000000000",
+      "borrowUsd": "0"
+    },
+    "0x39824390ecf310d63a6bb77fae7a95e7974e1ad3": {
+      "points": "20000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3a2bbce0271c7c7d1d0baeff2a70361df8d43e12": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3b48ec27ad2b0934c9741529bfd5694b2f7ba856": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3cd2c1ef1dd976d9b3d547fab3fe45643c336c9a": {
+      "points": "30000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3ce020839bca572d67fbf2029aa0b7bf43744122": {
+      "points": "232017198739608370",
+      "supplyUsd": "103287396741608370",
+      "borrowUsd": "64364900999000000"
+    },
+    "0x3d0de3a76cd9f856664dc5a3adfd4056e45da9ed": {
+      "points": "20000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3d4207175681997b89709672241a63edacbc38a7": {
+      "points": "250926575609",
+      "supplyUsd": "250926575609",
+      "borrowUsd": "0"
+    },
+    "0x3f4bef3311893aaa5847a16a7d8cebb74279983c": {
+      "points": "0",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x3f82be7f4af627fb9ef95eb874b6e4edaead5cdc": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x40b09e58ace2ad821bbb87ba456c2594b66b7fd5": {
+      "points": "310000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x41c1de88bcc454027818feb1f47811e1eb378b83": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x42bb4c898ecb413d3a37036cec542a9632a0d5f8": {
+      "points": "287000047269857910000",
+      "supplyUsd": "1999927398257910000",
+      "borrowUsd": "59935800000000"
+    },
+    "0x4a2763570edeeeb78e0174aeae6bedde6f143398": {
+      "points": "23761018463050513",
+      "supplyUsd": "21761456463050513",
+      "borrowUsd": "999781000000000"
+    },
+    "0x4e7b77680bbee8572348d17af81a94b174d611c1": {
+      "points": "5000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x4fc785032ecf864ccfc4ef7aa9a87be2a27cdbcd": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x50bdee072ddd502870ca45565c3a6478f799e2fd": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x525868063dfb084a3542e2dfeb60d81e21d79c31": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x53ecb60d515004eb49688744d3962267bb866660": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x5ba1342f0ed04cf301f1749a3b2a124fe8d6f0ae": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x6206c1a33fac30a575409f5d0d82b07777dd2eff": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x63bf2e5b4d835857e09f4c20368d0f33a3b2abf9": {
+      "points": "20000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x63fa3c56d9f75e8fdc06d53a9c2420e20cdea343": {
+      "points": "85000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x6daa630efe5b23d28b4b8cfe93c406827967ca70": {
+      "points": "65000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x70002b02aff8e79a81957dc912594b4805f6a2b2": {
+      "points": "110000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7241c18533acf5f786c5a0b5f9c2c370620c5c6f": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x74fe6056a9b9b2026fdfff4ff8c576867019e7f6": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7923043bb2ba4cadb177214ca71cb481c56c9a44": {
+      "points": "40765",
+      "supplyUsd": "40765",
+      "borrowUsd": "0"
+    },
+    "0x7aa3c55a94884eb452e3215e1ad7b75b918fe389": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7b6a9689bb5d714653e0ebf13494d1791267fad3": {
+      "points": "200000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7c1141c2c6db01a1f31073f9260f428336de4b16": {
+      "points": "40000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7c8fdc755481e35d069a84add0ad8369b822aafc": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x7dd74359d9d35bc6e16d47c5b39b215cee401287": {
+      "points": "57033317026286465060000",
+      "supplyUsd": "33023428425931191000000",
+      "borrowUsd": "12004944300177637030000"
+    },
+    "0x8270298caf64de076cb632cdcfdaa80257559d6d": {
+      "points": "100002172935000000000",
+      "supplyUsd": "2172935000000000",
+      "borrowUsd": "0"
+    },
+    "0x827681a3a315c0865463e238013c6a631ffdfab9": {
+      "points": "304210900000000000",
+      "supplyUsd": "304210900000000000",
+      "borrowUsd": "0"
+    },
+    "0x85f59090be8ddfbe570c0e5aa4cb14f04e3b67de": {
+      "points": "235022413797000000000",
+      "supplyUsd": "21729350000000000",
+      "borrowUsd": "342223500000000"
+    },
+    "0x897b8b9e56feafe226273ab9a6f5e53a481ec3e4": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x89d78f965a784633fccc8171472dda8b1e8ba3d6": {
+      "points": "100000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x8c660ef0fe909b78c8856e26c7722ac010fd333b": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x8c7ecaca2591636c9fcf2b3649a15b08fa1f695f": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x8d15f64212b0f1700d9ceaf35f95bbc06ccf2b44": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x8f2e62f6d088176bcf9cd900ad403ca82d79347d": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x978010cbe12fdc328bf2919fbb663438ed03e424": {
+      "points": "15000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x9974beae375ca2fcb12c1a946aa180a45e11ebb7": {
+      "points": "85000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x9cb7fc75b20ea18bb41aa2d37b8471e5ed3c2b99": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0x9f8bce2287a497ca9b9aadd17d02f66a5e520166": {
+      "points": "65000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xa1b6f4e2b53b692564adc93624dd971a79045193": {
+      "points": "30000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xa612cd92f8cf533e5a0943e7d3e263629c3429a9": {
+      "points": "85000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xa8692e1e65c9372fd2470d710b0f76a734a80874": {
+      "points": "108649749592437282",
+      "supplyUsd": "108649749592437282",
+      "borrowUsd": "0"
+    },
+    "0xa883f0e08615ce4783c4a47779125c8a433de8a8": {
+      "points": "8352370877337194253074",
+      "supplyUsd": "4352478595599726253074",
+      "borrowUsd": "1894946140868734000000"
+    },
+    "0xaf8c0b288ac9f129ad5db3f2ac26529f0995ce0d": {
+      "points": "70000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xb1ad60a07b284e56f6a825c6d1e860d4b00508dd": {
+      "points": "235091263270000000000",
+      "supplyUsd": "65188050000000000",
+      "borrowUsd": "13037610000000000"
+    },
+    "0xb681c301ae7d6b6d4686fbc3bde80a713f03acd4": {
+      "points": "110000005990692698506",
+      "supplyUsd": "5990692698506",
+      "borrowUsd": "0"
+    },
+    "0xb955bccc2d0db2785e1bb9668723024a123fe0d1": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xbd45cd12488818072ebb09e936045945d5efe73d": {
+      "points": "786537700208732520000",
+      "supplyUsd": "786537700208732520000",
+      "borrowUsd": "0"
+    },
+    "0xbd680338b781ccbdaafdf25e902f54b4a4974600": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xbe4c13cd9a94f2ab6a68560ccafeec1b81546bec": {
+      "points": "115000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xc2c1398e74d02e981ab914dd23ddc4ab390868d8": {
+      "points": "75000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xc77b259dab6132c0f5110d8cebdf7c4f445ee9eb": {
+      "points": "85000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xc95c0346cd7326348169bf66d7c2a936f0d444a2": {
+      "points": "45000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xca6777c63e4f28e7afa1b3063eab072f3efee6ae": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xcce1d7b6522c0abf2e240101424954bedc27f278": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xcdeec7e332f5c11e2db5c631b5950022ebb8f330": {
+      "points": "100000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xceec765627f44d18b55196a15d7581d5989d4fa7": {
+      "points": "40000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xd3e956e24157d64aca554ec644d377826fe12d77": {
+      "points": "792994350465",
+      "supplyUsd": "792994350465",
+      "borrowUsd": "0"
+    },
+    "0xd4d741ce2959ae7ab1d506c0db009e7918e5a6d3": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xda262cb03ff293c37b6ad4767b49b4350047bd79": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xda9f7c0e3f6d934ec2b45becc5262148ad54e995": {
+      "points": "30000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xdec4e9f46f9a4f7af7ccb62c1512b086fa054829": {
+      "points": "108646750000000000",
+      "supplyUsd": "108646750000000000",
+      "borrowUsd": "0"
+    },
+    "0xe2ee1f443f00b3580c3d82d496b53ffc0ea71bb0": {
+      "points": "10092032925500000",
+      "supplyUsd": "10048042561500000",
+      "borrowUsd": "21995182000000"
+    },
+    "0xe53a3efe7cb8931cccdcf6b165545586e467adad": {
+      "points": "35000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xe550ff4c89712409f9d70d0a5cc434a145237881": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xea3c147db011e223c1067f99ce0b56ed6da5efb2": {
+      "points": "145004345870000000000",
+      "supplyUsd": "4345870000000000",
+      "borrowUsd": "0"
+    },
+    "0xead4c5f07d7ec16be04072c9b84fa62aa5f0557d": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xeaed255f5af31c8a3bcae586b87cc9b2be6c6990": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xed94d9db6581c59de3875541c533f821c7228c3a": {
+      "points": "98464439527274146554",
+      "supplyUsd": "98464439527274146554",
+      "borrowUsd": "0"
+    },
+    "0xf01f59bd8989c3423182c3505a759f292d57121d": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xf139d17985793aec19afd43c323a8407536102ee": {
+      "points": "25000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xf18fcc2dcdcdc197b036b290becbed692b9d2678": {
+      "points": "4776442799000000000",
+      "supplyUsd": "3272720753000000000",
+      "borrowUsd": "751861023000000000"
+    },
+    "0xf23887da1209dd0dc7879df6c1f290e726eef0f2": {
+      "points": "10000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    },
+    "0xf34cbcc53757f9ebe078978a0ee2581605d5e5bf": {
+      "points": "42254635661275639451641",
+      "supplyUsd": "22267525661275639451641",
+      "borrowUsd": "9993555000000000000000"
+    },
+    "0xf689bb846ee7dd51947c3368cc3ee26713d3ed83": {
+      "points": "3036114187778930941",
+      "supplyUsd": "3036114187778930941",
+      "borrowUsd": "0"
+    },
+    "0xf79cb6b22b1b106ff4eab4e1b7f1b403cd9f5a3b": {
+      "points": "65000000000000000000",
+      "supplyUsd": "0",
+      "borrowUsd": "0"
+    }
+  },
+  "appliedBonusHashes": ["b6bc009ebd1146332eb4012eece06c2690f1f31b2034fe9e568065d7ac224aa3"]
+}
