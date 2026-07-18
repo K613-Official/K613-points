@@ -1,0 +1,1662 @@
+{
+  "season": 1,
+  "throughWeek": 4,
+  "seasonStart": 1779321600,
+  "seasonEnd": 1781740800,
+  "finalizedAt": "2026-07-18T19:47:23.062Z",
+  "finalRoot": "0x986ad9b1823fd92cc93e52d6a46f29c3f6e076b20b7df006f4c04a77f2a8063a",
+  "totalK613ToFund": "429198326537959765443667",
+  "holders": 275,
+  "rows": [
+    {
+      "rank": 1,
+      "address": "0x7dd74359d9d35bc6e16d47c5b39b215cee401287",
+      "cumulativePoints": "225775592455277228780000",
+      "totalAllocation": "225775592455277228780000"
+    },
+    {
+      "rank": 2,
+      "address": "0xf34cbcc53757f9ebe078978a0ee2581605d5e5bf",
+      "cumulativePoints": "168497137519284450805429",
+      "totalAllocation": "168497137519284450805429"
+    },
+    {
+      "rank": 3,
+      "address": "0xa883f0e08615ce4783c4a47779125c8a433de8a8",
+      "cumulativePoints": "15826624372848278039111",
+      "totalAllocation": "15826624372848278039111"
+    },
+    {
+      "rank": 4,
+      "address": "0xbd45cd12488818072ebb09e936045945d5efe73d",
+      "cumulativePoints": "2359463393343360360000",
+      "totalAllocation": "2359463393343360360000"
+    },
+    {
+      "rank": 5,
+      "address": "0xb1ad60a07b284e56f6a825c6d1e860d4b00508dd",
+      "cumulativePoints": "960183026844000000000",
+      "totalAllocation": "960183026844000000000"
+    },
+    {
+      "rank": 6,
+      "address": "0x42bb4c898ecb413d3a37036cec542a9632a0d5f8",
+      "cumulativePoints": "562000047269857910000",
+      "totalAllocation": "562000047269857910000"
+    },
+    {
+      "rank": 7,
+      "address": "0x282cbe7e4ed3f7b5fd2cb4307e95875fb4120613",
+      "cumulativePoints": "539149333838620981021",
+      "totalAllocation": "539149333838620981021"
+    },
+    {
+      "rank": 8,
+      "address": "0xed94d9db6581c59de3875541c533f821c7228c3a",
+      "cumulativePoints": "403139200941527945908",
+      "totalAllocation": "403139200941527945908"
+    },
+    {
+      "rank": 9,
+      "address": "0x4a2763570edeeeb78e0174aeae6bedde6f143398",
+      "cumulativePoints": "365047671450795351805",
+      "totalAllocation": "365047671450795351805"
+    },
+    {
+      "rank": 10,
+      "address": "0xea3c147db011e223c1067f99ce0b56ed6da5efb2",
+      "cumulativePoints": "360008715564000000000",
+      "totalAllocation": "360008715564000000000"
+    },
+    {
+      "rank": 11,
+      "address": "0x85f59090be8ddfbe570c0e5aa4cb14f04e3b67de",
+      "cumulativePoints": "310022413797000000000",
+      "totalAllocation": "310022413797000000000"
+    },
+    {
+      "rank": 12,
+      "address": "0x40b09e58ace2ad821bbb87ba456c2594b66b7fd5",
+      "cumulativePoints": "310000000000000000000",
+      "totalAllocation": "310000000000000000000"
+    },
+    {
+      "rank": 13,
+      "address": "0x3ce020839bca572d67fbf2029aa0b7bf43744122",
+      "cumulativePoints": "285464599587513832685",
+      "totalAllocation": "285464599587513832685"
+    },
+    {
+      "rank": 14,
+      "address": "0x8270298caf64de076cb632cdcfdaa80257559d6d",
+      "cumulativePoints": "260004357782000000000",
+      "totalAllocation": "260004357782000000000"
+    },
+    {
+      "rank": 15,
+      "address": "0xa8692e1e65c9372fd2470d710b0f76a734a80874",
+      "cumulativePoints": "240217892099592437282",
+      "totalAllocation": "240217892099592437282"
+    },
+    {
+      "rank": 16,
+      "address": "0x7b6a9689bb5d714653e0ebf13494d1791267fad3",
+      "cumulativePoints": "235000000000000000000",
+      "totalAllocation": "235000000000000000000"
+    },
+    {
+      "rank": 17,
+      "address": "0x1648d672182c663b2caa9de40913c8bafba7f545",
+      "cumulativePoints": "205019862922070000000",
+      "totalAllocation": "205019862922070000000"
+    },
+    {
+      "rank": 18,
+      "address": "0xb681c301ae7d6b6d4686fbc3bde80a713f03acd4",
+      "cumulativePoints": "185000005990692698506",
+      "totalAllocation": "185000005990692698506"
+    },
+    {
+      "rank": 19,
+      "address": "0x89d78f965a784633fccc8171472dda8b1e8ba3d6",
+      "cumulativePoints": "160000000000000000000",
+      "totalAllocation": "160000000000000000000"
+    },
+    {
+      "rank": 20,
+      "address": "0x7923043bb2ba4cadb177214ca71cb481c56c9a44",
+      "cumulativePoints": "159368383263078187603",
+      "totalAllocation": "159368383263078187603"
+    },
+    {
+      "rank": 21,
+      "address": "0xbe4c13cd9a94f2ab6a68560ccafeec1b81546bec",
+      "cumulativePoints": "125000000000000000000",
+      "totalAllocation": "125000000000000000000"
+    },
+    {
+      "rank": 22,
+      "address": "0x0798872f5548fda38571ffab2932908b780c0008",
+      "cumulativePoints": "115000000000000000000",
+      "totalAllocation": "115000000000000000000"
+    },
+    {
+      "rank": 23,
+      "address": "0x6daa630efe5b23d28b4b8cfe93c406827967ca70",
+      "cumulativePoints": "115000000000000000000",
+      "totalAllocation": "115000000000000000000"
+    },
+    {
+      "rank": 24,
+      "address": "0x41c1de88bcc454027818feb1f47811e1eb378b83",
+      "cumulativePoints": "110000000000000000000",
+      "totalAllocation": "110000000000000000000"
+    },
+    {
+      "rank": 25,
+      "address": "0x525868063dfb084a3542e2dfeb60d81e21d79c31",
+      "cumulativePoints": "110000000000000000000",
+      "totalAllocation": "110000000000000000000"
+    },
+    {
+      "rank": 26,
+      "address": "0x70002b02aff8e79a81957dc912594b4805f6a2b2",
+      "cumulativePoints": "110000000000000000000",
+      "totalAllocation": "110000000000000000000"
+    },
+    {
+      "rank": 27,
+      "address": "0xbd680338b781ccbdaafdf25e902f54b4a4974600",
+      "cumulativePoints": "110000000000000000000",
+      "totalAllocation": "110000000000000000000"
+    },
+    {
+      "rank": 28,
+      "address": "0xe53a3efe7cb8931cccdcf6b165545586e467adad",
+      "cumulativePoints": "110000000000000000000",
+      "totalAllocation": "110000000000000000000"
+    },
+    {
+      "rank": 29,
+      "address": "0x0a65c215ce8abc782a4b763fffa10a41652ac42c",
+      "cumulativePoints": "100047804570000000000",
+      "totalAllocation": "100047804570000000000"
+    },
+    {
+      "rank": 30,
+      "address": "0x2783d01267103b0537aad8b57a9d3dc3ba8db3e3",
+      "cumulativePoints": "100000000000000000000",
+      "totalAllocation": "100000000000000000000"
+    },
+    {
+      "rank": 31,
+      "address": "0xb955bccc2d0db2785e1bb9668723024a123fe0d1",
+      "cumulativePoints": "100000000000000000000",
+      "totalAllocation": "100000000000000000000"
+    },
+    {
+      "rank": 32,
+      "address": "0xcdeec7e332f5c11e2db5c631b5950022ebb8f330",
+      "cumulativePoints": "100000000000000000000",
+      "totalAllocation": "100000000000000000000"
+    },
+    {
+      "rank": 33,
+      "address": "0x3b48ec27ad2b0934c9741529bfd5694b2f7ba856",
+      "cumulativePoints": "90000000000000000000",
+      "totalAllocation": "90000000000000000000"
+    },
+    {
+      "rank": 34,
+      "address": "0x63fa3c56d9f75e8fdc06d53a9c2420e20cdea343",
+      "cumulativePoints": "85000000000000000000",
+      "totalAllocation": "85000000000000000000"
+    },
+    {
+      "rank": 35,
+      "address": "0x9974beae375ca2fcb12c1a946aa180a45e11ebb7",
+      "cumulativePoints": "85000000000000000000",
+      "totalAllocation": "85000000000000000000"
+    },
+    {
+      "rank": 36,
+      "address": "0xa612cd92f8cf533e5a0943e7d3e263629c3429a9",
+      "cumulativePoints": "85000000000000000000",
+      "totalAllocation": "85000000000000000000"
+    },
+    {
+      "rank": 37,
+      "address": "0xaf8c0b288ac9f129ad5db3f2ac26529f0995ce0d",
+      "cumulativePoints": "85000000000000000000",
+      "totalAllocation": "85000000000000000000"
+    },
+    {
+      "rank": 38,
+      "address": "0xc77b259dab6132c0f5110d8cebdf7c4f445ee9eb",
+      "cumulativePoints": "85000000000000000000",
+      "totalAllocation": "85000000000000000000"
+    },
+    {
+      "rank": 39,
+      "address": "0x3fedf433f82332bf096b66161645d0d15d1fc884",
+      "cumulativePoints": "80000000000000000000",
+      "totalAllocation": "80000000000000000000"
+    },
+    {
+      "rank": 40,
+      "address": "0x9cb7fc75b20ea18bb41aa2d37b8471e5ed3c2b99",
+      "cumulativePoints": "80000000000000000000",
+      "totalAllocation": "80000000000000000000"
+    },
+    {
+      "rank": 41,
+      "address": "0xc95c0346cd7326348169bf66d7c2a936f0d444a2",
+      "cumulativePoints": "80000000000000000000",
+      "totalAllocation": "80000000000000000000"
+    },
+    {
+      "rank": 42,
+      "address": "0xceec765627f44d18b55196a15d7581d5989d4fa7",
+      "cumulativePoints": "80000000000000000000",
+      "totalAllocation": "80000000000000000000"
+    },
+    {
+      "rank": 43,
+      "address": "0xe2ee1f443f00b3580c3d82d496b53ffc0ea71bb0",
+      "cumulativePoints": "75010092032925500000",
+      "totalAllocation": "75010092032925500000"
+    },
+    {
+      "rank": 44,
+      "address": "0x1ed9ebada462e55e0128ef9d039f6f1d71eeab27",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 45,
+      "address": "0x21fe04c057b563e483e5c012f9e992dd2fd3d93e",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 46,
+      "address": "0x22376ac36151844e1a187c66b777b6311d9c7d40",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 47,
+      "address": "0x3f82be7f4af627fb9ef95eb874b6e4edaead5cdc",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 48,
+      "address": "0x8c7ecaca2591636c9fcf2b3649a15b08fa1f695f",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 49,
+      "address": "0x8dbf28f00d51a9011a7b13a5610a95919dadec70",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 50,
+      "address": "0xa85b53a872086f83077f260a45f6ac9608e39f2b",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 51,
+      "address": "0xc2c1398e74d02e981ab914dd23ddc4ab390868d8",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 52,
+      "address": "0xdc6042b5388d443e1978f4f3fbbdb0be26f0e4e3",
+      "cumulativePoints": "75000000000000000000",
+      "totalAllocation": "75000000000000000000"
+    },
+    {
+      "rank": 53,
+      "address": "0x5ba1342f0ed04cf301f1749a3b2a124fe8d6f0ae",
+      "cumulativePoints": "70000000000000000000",
+      "totalAllocation": "70000000000000000000"
+    },
+    {
+      "rank": 54,
+      "address": "0xf01f59bd8989c3423182c3505a759f292d57121d",
+      "cumulativePoints": "70000000000000000000",
+      "totalAllocation": "70000000000000000000"
+    },
+    {
+      "rank": 55,
+      "address": "0x100f62c77943e3ece4f8954465eff5392825f3e4",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 56,
+      "address": "0x4862e042ca1edb6e16792f2c77937a56e207cd75",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 57,
+      "address": "0x4fc785032ecf864ccfc4ef7aa9a87be2a27cdbcd",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 58,
+      "address": "0x6e422b5b1fe297cee532e773346423f8763afd4c",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 59,
+      "address": "0x711bc6b447a58e92ab99a15403f7c90a84e37056",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 60,
+      "address": "0x7efd5ba8c85c674016e2154e4739c20a9af81b44",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 61,
+      "address": "0x8b50fd20f04165bd3f35088fb601ff3ec0d513c0",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 62,
+      "address": "0x9f8bce2287a497ca9b9aadd17d02f66a5e520166",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 63,
+      "address": "0xa41a035b31caa24c4559390aa17a5602267fad19",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 64,
+      "address": "0xf79cb6b22b1b106ff4eab4e1b7f1b403cd9f5a3b",
+      "cumulativePoints": "65000000000000000000",
+      "totalAllocation": "65000000000000000000"
+    },
+    {
+      "rank": 65,
+      "address": "0x0a5634fcd02088b04ace88c29ae4bc2fe35379e9",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 66,
+      "address": "0x15c20c042fbfb3081216e4a84f7ccd8ffae13c2e",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 67,
+      "address": "0x2fb97a0ff21de782068408832c0fee135db1982d",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 68,
+      "address": "0x3ce37e3ec52e91b1b3cf5848307da66f8e261e1e",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 69,
+      "address": "0x7c532695edd5910d95097883d956a117fac30628",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 70,
+      "address": "0x9fb0b537c3a4f64067e13056cf48b0f5715b3fce",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 71,
+      "address": "0xaa090889e0bd2376841019dbd097a158884c6a18",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 72,
+      "address": "0xbe8192149a88a3c824c6fb1fc90e86379061192c",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 73,
+      "address": "0xd0b407c6087911c1a81dff7015a32ae92d3e7289",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 74,
+      "address": "0xd7a5ea9e8c52bfc1f78b50ad225331e1c9139f1e",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 75,
+      "address": "0xde58e7a03f5f1a868fa974b60acde04285cec7ca",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 76,
+      "address": "0xe97cd024d46fa97c42793ff6b8c80e6bfe73b0b9",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 77,
+      "address": "0xf881d1c94610b592946673f8eba2715546f52b02",
+      "cumulativePoints": "60000000000000000000",
+      "totalAllocation": "60000000000000000000"
+    },
+    {
+      "rank": 78,
+      "address": "0x00fc238bca0248e77563ff9d48113b08187ef146",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 79,
+      "address": "0x082be62449d16785bc8de71cdcfce421aeb15744",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 80,
+      "address": "0x0abec9940d16cb56ea9a0f83e2647b80dede173e",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 81,
+      "address": "0x15cac152fda64bd4284db59639de12b6e4f131d8",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 82,
+      "address": "0x1ad3aa7ad295f2c5e4647553a746dc1659aa731e",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 83,
+      "address": "0x23d0e6a9ba024505cfd75d206f5761420ec369e6",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 84,
+      "address": "0x2b29744dd3d3ce8e3e2880e477d4c8b43ac57481",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 85,
+      "address": "0x2e6585cf7e6f7533a634306216d826748b3b8c02",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 86,
+      "address": "0x2ecaa64bdd1996a9cb7360a4017de9e0d071ba93",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 87,
+      "address": "0x303264e24970cc88508823b0bbdd128033ff672f",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 88,
+      "address": "0x354aa13e3c9de951e89293b3cbc9c8cfa81245a6",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 89,
+      "address": "0x3e76a42c619e482ebe8acb91fe5a9b91d72a20fd",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 90,
+      "address": "0x40accf778fb09477bda1043835fda1cb3df523dd",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 91,
+      "address": "0x43bc7733631e562fc00f122aa678b7571033dafe",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 92,
+      "address": "0x456bfc384757c792c2658f7f08fdbf97d042433d",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 93,
+      "address": "0x600a53451770ac75007a0786e29aac1c5469cad2",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 94,
+      "address": "0x6154d6d68698bbd08fe50d2bbf05437574eed520",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 95,
+      "address": "0x6206c1a33fac30a575409f5d0d82b07777dd2eff",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 96,
+      "address": "0x63a87e0e60a4e183e096bb4b7632712e0f8d3738",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 97,
+      "address": "0x6df9dd25bc106942519ca6c6b05e227213151759",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 98,
+      "address": "0x7c8cf0fc76997dd16262ac948b486cc2b314205e",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 99,
+      "address": "0x7e2fd5ca519318a3879c2fd8784993eea2cad1bf",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 100,
+      "address": "0x7f14aee15e542c7b25b389203a1353657731b3a4",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 101,
+      "address": "0x8107d1ad7ea3c30839c24b2ec694b6e4186f891d",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 102,
+      "address": "0x8a46200ef724a5b425b9fe792c157323df0b8602",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 103,
+      "address": "0x8ff5a0ba429c11d477a5f9fd19e29ed8b7d17cb9",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 104,
+      "address": "0x92ebb03df09aa3af4ce2c0d452d8902b2cd84d16",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 105,
+      "address": "0x978010cbe12fdc328bf2919fbb663438ed03e424",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 106,
+      "address": "0x990ebea0aed4025af6376fec136c3f6dd84771d3",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 107,
+      "address": "0x9d9c1715c66cbee0566f509b8db7344095d93622",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 108,
+      "address": "0xa2277cfda5c7c3a173bdd30dd2293d96ef8598d1",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 109,
+      "address": "0xa49c640337f5f6b6ab67fc09855ab3be04e53ba0",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 110,
+      "address": "0xa4eac1d3bc0324e6975c882611cac688e597020b",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 111,
+      "address": "0xa6a9abd49968e702580c23b410096b75d8306361",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 112,
+      "address": "0xab77e8eee65e6b622c62d08df0e476998acc4e60",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 113,
+      "address": "0xb014d3dc193ec49c60a983d06c764c7fdba8c696",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 114,
+      "address": "0xb61d9941ee723f51367525cb06670449775302fb",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 115,
+      "address": "0xc0fcc39b482bfca9a1cba2878291c5b0f4b9cdaf",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 116,
+      "address": "0xc21081c877524803f96550b8f7dd2fbeaa024793",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 117,
+      "address": "0xcec4aef4e191307625f10c12fb5c1d1724d1ddb3",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 118,
+      "address": "0xcf8db58a5525ed624ea3faef3f90eb3341840714",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 119,
+      "address": "0xd056eec09781903a0ca6ad858c8ace588ea07a12",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 120,
+      "address": "0xd148b4113e8c1aacb4f745b331b64925c6e6badf",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 121,
+      "address": "0xd77eb97a9632ccdbee94360e829f7ffbfb79786f",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 122,
+      "address": "0xd801ed903f07046546a97cdaccd21bf53021ee02",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 123,
+      "address": "0xe4e8cda3be6dda3539a24c3810813911aa823686",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 124,
+      "address": "0xf4f8c4cd3db01c161e05631cf924f66cf2b92fdd",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 125,
+      "address": "0xf5059fae34a98c10513c5f23d09ee9ff2021dab1",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 126,
+      "address": "0xf6bfdef4752ef89d5d4fa5af586cee050eabfb62",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 127,
+      "address": "0xf9bb14ddf1bc222f973a5be3bac4d367ccb56cf1",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 128,
+      "address": "0xfbc38e7d9fcda59c45c92c7e75f1b24994ae3dba",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 129,
+      "address": "0xfdf4df1f5a4102c4d0f3f90ccd654256353e83f6",
+      "cumulativePoints": "55000000000000000000",
+      "totalAllocation": "55000000000000000000"
+    },
+    {
+      "rank": 130,
+      "address": "0x0167208feec79808aa6de7a497f6cd853a8fcfd0",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 131,
+      "address": "0x09a06fd081d659240a336c1a8412d802a739aa47",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 132,
+      "address": "0x2712d86c8812f3eb75f200be2ee878810bf03516",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 133,
+      "address": "0x281272775d83e3db522e416f49845641586f4602",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 134,
+      "address": "0x2ba7126a0dedd67e2382709cd5063143d7b59f0c",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 135,
+      "address": "0x3314c804ff9e462e7345ffeab6b013fa251e2c49",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 136,
+      "address": "0x357bfe2b3d98ba33194e921355ef5ba3497fa92e",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 137,
+      "address": "0x3f36917bbce11c0b057d9034a12121964fb2ce87",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 138,
+      "address": "0x480abe4c94f56adcdcf9916105a17fa0db9cddac",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 139,
+      "address": "0x72a983236209490567a694d33c8ce6c2f2942290",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 140,
+      "address": "0x7415b5ee6ef35aa79906a52eb7167c9ba594e98e",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 141,
+      "address": "0x77d32842622f66f8ae9295ae1a708ef955543843",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 142,
+      "address": "0x7a16abe331efaa6e88871b0c88a219749f7c8e5c",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 143,
+      "address": "0x8a389432ec7c196e3db5b93681c7f202c22b17cb",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 144,
+      "address": "0x8c660ef0fe909b78c8856e26c7722ac010fd333b",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 145,
+      "address": "0x8f2e62f6d088176bcf9cd900ad403ca82d79347d",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 146,
+      "address": "0x901a62a4a4abf09f53019767daa872f8ee1399bc",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 147,
+      "address": "0x92f7fe00778971a33c023c5e25c02456aee8b3dc",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 148,
+      "address": "0x9417099e844285fc4f6312676c30672eae12b05a",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 149,
+      "address": "0xa53f0ec4771df703e7e1b558abaed6cd421f088a",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 150,
+      "address": "0xa756bf2529ef4d1318728c1bb412b34a4fdf0439",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 151,
+      "address": "0xa85fc614b38e56041f1a5f0c3078f88e449c7479",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 152,
+      "address": "0xb2b1f686833717068d6c8111ce2e0104d4686699",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 153,
+      "address": "0xb923a90a1bf7eaadfcde758b8912fa99e7231e69",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 154,
+      "address": "0xbc15496c6c0a812985c53a75719630fb416777f6",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 155,
+      "address": "0xd20e650cd83ee3bceeecfbba69e6bda443daea2c",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 156,
+      "address": "0xd273ba51c45e0bd21a3faade660494c1834d0f5c",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 157,
+      "address": "0xe98b9b002e2258d1b0c0eb0748bb586e50b831d8",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 158,
+      "address": "0xed75fc2a99748888c648831120ac11fc868aa76f",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 159,
+      "address": "0xeecc5f5c0704c516dbb832d18b988a11e364637b",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 160,
+      "address": "0xefd0262ee24ea875facacaf6ec0f97b4efe270a1",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 161,
+      "address": "0xf260348d0a0617421469cb3f52284ce84e0fd709",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 162,
+      "address": "0xf70f5a6ae0ec5b01879460a9efbc87d3e3725d4a",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 163,
+      "address": "0xfec788768082b7ca77f70aef3622ea900bb6a3cb",
+      "cumulativePoints": "50000000000000000000",
+      "totalAllocation": "50000000000000000000"
+    },
+    {
+      "rank": 164,
+      "address": "0x056882a93c40613e98d1d6f8b1682faa93f21ca3",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 165,
+      "address": "0x07208d106db25de33027537eee74ecd07429e486",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 166,
+      "address": "0x220fa5786ec6f05bb2b3d65278e1857519d6c2b6",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 167,
+      "address": "0x2a195f78f6c6652644e4e181d71a9bb4c0a65de5",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 168,
+      "address": "0x65fe52bc0e28a679513bc2781d2aebac0ee2795a",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 169,
+      "address": "0x66157bf20eac23b1bc7230a5f6829dc16c2692a5",
+      "cumulativePoints": "45000000000000000000",
+      "totalAllocation": "45000000000000000000"
+    },
+    {
+      "rank": 170,
+      "address": "0x1357be3f8ba486146f34f782eb14346747ff5d80",
+      "cumulativePoints": "40721705942755916582",
+      "totalAllocation": "40721705942755916582"
+    },
+    {
+      "rank": 171,
+      "address": "0x50bdee072ddd502870ca45565c3a6478f799e2fd",
+      "cumulativePoints": "40000000000000000000",
+      "totalAllocation": "40000000000000000000"
+    },
+    {
+      "rank": 172,
+      "address": "0x60bdc4db5b0365013980e23a372d0e1cb1b03ed4",
+      "cumulativePoints": "40000000000000000000",
+      "totalAllocation": "40000000000000000000"
+    },
+    {
+      "rank": 173,
+      "address": "0x7aa3c55a94884eb452e3215e1ad7b75b918fe389",
+      "cumulativePoints": "40000000000000000000",
+      "totalAllocation": "40000000000000000000"
+    },
+    {
+      "rank": 174,
+      "address": "0x7c1141c2c6db01a1f31073f9260f428336de4b16",
+      "cumulativePoints": "40000000000000000000",
+      "totalAllocation": "40000000000000000000"
+    },
+    {
+      "rank": 175,
+      "address": "0x0caf99f443eb5462427561067dbf3fee53e5fd1f",
+      "cumulativePoints": "35000000000000000000",
+      "totalAllocation": "35000000000000000000"
+    },
+    {
+      "rank": 176,
+      "address": "0x3a2bbce0271c7c7d1d0baeff2a70361df8d43e12",
+      "cumulativePoints": "35000000000000000000",
+      "totalAllocation": "35000000000000000000"
+    },
+    {
+      "rank": 177,
+      "address": "0x5d90d15bd3fd7b6d3aed64a2b1b66929a0197e59",
+      "cumulativePoints": "35000000000000000000",
+      "totalAllocation": "35000000000000000000"
+    },
+    {
+      "rank": 178,
+      "address": "0x74fe6056a9b9b2026fdfff4ff8c576867019e7f6",
+      "cumulativePoints": "35000000000000000000",
+      "totalAllocation": "35000000000000000000"
+    },
+    {
+      "rank": 179,
+      "address": "0x8c9dbd4272df2bc6dbdf9091109889174fbfc3ab",
+      "cumulativePoints": "35000000000000000000",
+      "totalAllocation": "35000000000000000000"
+    },
+    {
+      "rank": 180,
+      "address": "0x11b1d114483319cc4394ef8eee35a024c51dc6ef",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 181,
+      "address": "0x28135235541742bc1424d10b5de1963292f0c1e4",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 182,
+      "address": "0x3cd2c1ef1dd976d9b3d547fab3fe45643c336c9a",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 183,
+      "address": "0x50c55d3448f528b699f7cde2f30b5851ed7cdb69",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 184,
+      "address": "0x54187a9ec2ebdae457e3a292ed15728c6532f613",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 185,
+      "address": "0x63bf2e5b4d835857e09f4c20368d0f33a3b2abf9",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 186,
+      "address": "0xa1b6f4e2b53b692564adc93624dd971a79045193",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 187,
+      "address": "0xbdc9bdccb135c4e837c121e95d04b6ebbec38e35",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 188,
+      "address": "0xda9f7c0e3f6d934ec2b45becc5262148ad54e995",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 189,
+      "address": "0xe8957a222204284ab133799e900b392878915a9f",
+      "cumulativePoints": "30000000000000000000",
+      "totalAllocation": "30000000000000000000"
+    },
+    {
+      "rank": 190,
+      "address": "0x246e11ba7a5a87d99b2ecd265ad3bf1390cbd29c",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 191,
+      "address": "0x2b7bf0f30867991ae05c39f1fb9ec1e1e7fbc218",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 192,
+      "address": "0x2d99ad34038746b528810cd39461baf144795c66",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 193,
+      "address": "0x310aa04324b564fb1178c92c1e7d1dc14c51669d",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 194,
+      "address": "0x36eb6ba7a75b1a7e0596f8fc682c695c41d9e507",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 195,
+      "address": "0x427a60909f776b68e55b528d18f6371183fe3762",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 196,
+      "address": "0x4616abf78e1c5e41154a5445833d770e5b66d34e",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 197,
+      "address": "0x565f1b37de350208b3d23369d833ed487ec18375",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 198,
+      "address": "0x5bd1f92da8781e1e6a0748a009daccf30e14085b",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 199,
+      "address": "0x7980b95073b1df773048954610e11ce66ddbbf36",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 200,
+      "address": "0x7c8fdc755481e35d069a84add0ad8369b822aafc",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 201,
+      "address": "0x897b8b9e56feafe226273ab9a6f5e53a481ec3e4",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 202,
+      "address": "0xa4d057b82aa5c24709eb200fe0887956eb214092",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 203,
+      "address": "0xaf1df49b72fe8f5b89adfeb0ccca0f70b5e7be14",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 204,
+      "address": "0xb9cc3ef4377479f97ebe1ad9a7e4e658c6fb16af",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 205,
+      "address": "0xd4d741ce2959ae7ab1d506c0db009e7918e5a6d3",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 206,
+      "address": "0xd69de4b88440c58c0bf8e5f95d5476570e01ca52",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 207,
+      "address": "0xda262cb03ff293c37b6ad4767b49b4350047bd79",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 208,
+      "address": "0xe550ff4c89712409f9d70d0a5cc434a145237881",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 209,
+      "address": "0xead4c5f07d7ec16be04072c9b84fa62aa5f0557d",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 210,
+      "address": "0xeaed255f5af31c8a3bcae586b87cc9b2be6c6990",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 211,
+      "address": "0xee95ee82e4e5a6cbb5156b2dbfdb63edc77efee0",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 212,
+      "address": "0xf139d17985793aec19afd43c323a8407536102ee",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 213,
+      "address": "0xf2dac618057717736fa132033e187138328256ca",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 214,
+      "address": "0xf4b71f9f8bfab25831f53a400299f5e5139c8629",
+      "cumulativePoints": "25000000000000000000",
+      "totalAllocation": "25000000000000000000"
+    },
+    {
+      "rank": 215,
+      "address": "0x22b0fa752fa64a0ac0a95590c8f9db8c29acc4d1",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 216,
+      "address": "0x39824390ecf310d63a6bb77fae7a95e7974e1ad3",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 217,
+      "address": "0x3d0de3a76cd9f856664dc5a3adfd4056e45da9ed",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 218,
+      "address": "0x5f1ec9bc6d3847d8ad98dfc227d4ec8d69a4f1be",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 219,
+      "address": "0x65408a4be8244cd5f87d602bdeba1c528d15b312",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 220,
+      "address": "0x79c778c35b8d12b3a79749a68dc2dfd3f7e1f6ff",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 221,
+      "address": "0x972143fa009b966543cbc7943370bda9b8d41b1f",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 222,
+      "address": "0xba0e4eb2d4c6927bbf3b87ac1e4769374aae709f",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 223,
+      "address": "0xcce1d7b6522c0abf2e240101424954bedc27f278",
+      "cumulativePoints": "20000000000000000000",
+      "totalAllocation": "20000000000000000000"
+    },
+    {
+      "rank": 224,
+      "address": "0xf18fcc2dcdcdc197b036b290becbed692b9d2678",
+      "cumulativePoints": "15434774044000000000",
+      "totalAllocation": "15434774044000000000"
+    },
+    {
+      "rank": 225,
+      "address": "0x53da33f96ecffe1cdf3842883c9ba3ba3b49c14b",
+      "cumulativePoints": "15000000000000000000",
+      "totalAllocation": "15000000000000000000"
+    },
+    {
+      "rank": 226,
+      "address": "0x99e3b7452a66bca68d3863f04ff332d5d89dbbec",
+      "cumulativePoints": "15000000000000000000",
+      "totalAllocation": "15000000000000000000"
+    },
+    {
+      "rank": 227,
+      "address": "0xe4513612fdd18b56c9a06b1950ec35dcf7eece2c",
+      "cumulativePoints": "15000000000000000000",
+      "totalAllocation": "15000000000000000000"
+    },
+    {
+      "rank": 228,
+      "address": "0xfa1c3cf4c0563133cd09714d4c3b0fd27cdd5b11",
+      "cumulativePoints": "15000000000000000000",
+      "totalAllocation": "15000000000000000000"
+    },
+    {
+      "rank": 229,
+      "address": "0x051491e6490a70dda45f8e424b52a9d0071d8cf1",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 230,
+      "address": "0x0dff98053ef265671fcfcf1d71dfdc17001454eb",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 231,
+      "address": "0x1b9826b1fe5397c0cb5455fbb8d7aa2d4e4b282e",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 232,
+      "address": "0x27b60f36c8f7f55e0c41a9b4033d730647eb002b",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 233,
+      "address": "0x286438884aadabd18058eda12efe3fdff840eff3",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 234,
+      "address": "0x2d4ca8540b2cfdcc040a7aef3905f85fc7796160",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 235,
+      "address": "0x3f4bef3311893aaa5847a16a7d8cebb74279983c",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 236,
+      "address": "0x53707072d0a6f27215b8b9301bb4685be8f516f2",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 237,
+      "address": "0x53ecb60d515004eb49688744d3962267bb866660",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 238,
+      "address": "0x5c47952bc0e6b41688635449a30317c7e885d4f1",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 239,
+      "address": "0x60f0fe4f7c271b5e8a0f211aa7bd98285dca111b",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 240,
+      "address": "0x622468ffc2ba8b4166d24685abd5493cd13ec0bf",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 241,
+      "address": "0x628c9c826a0da190731e27cc9476174e20fe55fe",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 242,
+      "address": "0x7241c18533acf5f786c5a0b5f9c2c370620c5c6f",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 243,
+      "address": "0x73b1fd1cd7c00e8eda3356ed6fd00eab1c77350e",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 244,
+      "address": "0x76c07087bb4eb86d2516081f79f400507ac2370f",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 245,
+      "address": "0x8b99d1ace44d52659bbe65f7f4c7f5d59afc2b7e",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 246,
+      "address": "0x8d15f64212b0f1700d9ceaf35f95bbc06ccf2b44",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 247,
+      "address": "0x95752f215e4891abf3853bed53148b604761ece0",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 248,
+      "address": "0x9ca7be83741a9d24ca664b4f9b68aa2dbc74953b",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 249,
+      "address": "0xaf0dfdfa4dee379ce6f1fc562bacdd7a43a0f5a3",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 250,
+      "address": "0xc0acf511babc340fd0ff969e112c4c45e31c6c7c",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 251,
+      "address": "0xc5829d033bb3bc99b2b0581e7f44cf349a0c7573",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 252,
+      "address": "0xca6777c63e4f28e7afa1b3063eab072f3efee6ae",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 253,
+      "address": "0xda874f9e8ea7bc73a314742b03c66377e4fe35e0",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 254,
+      "address": "0xeb1378b5c601c3f2020ca409ba5344d882342cf7",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 255,
+      "address": "0xf23887da1209dd0dc7879df6c1f290e726eef0f2",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 256,
+      "address": "0xf9f8ab97c46564a05b77ec2e0c79d6ed8d043337",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 257,
+      "address": "0xfa93bb19b797167f16c06f762b22e3d4a53e6295",
+      "cumulativePoints": "10000000000000000000",
+      "totalAllocation": "10000000000000000000"
+    },
+    {
+      "rank": 258,
+      "address": "0x1349022a660e6fc6272ad0cf031445cb2c83640b",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 259,
+      "address": "0x164cd85f615d2331507d54d52cfd675fe8dfbc83",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 260,
+      "address": "0x4d32616ca5b50add91017a48d18f79d33bb3cdb8",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 261,
+      "address": "0x4e7b77680bbee8572348d17af81a94b174d611c1",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 262,
+      "address": "0x5756e0573347d160c10b68c8c61894d5d2392f06",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 263,
+      "address": "0x5e91692611d4b350e5fcdb773c02c26731cd770b",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 264,
+      "address": "0x7335f83cb3f1da44aade5588be8d8eb1e1cb8fe0",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 265,
+      "address": "0x7356e5074feca1e2fe9e4779ce3275c3f275bb54",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 266,
+      "address": "0x76bec864ae24cd07302b980bc20319a9224b24c7",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 267,
+      "address": "0x7ed60ddc1b0983870f0d608aefd5bb5c0f815b7e",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 268,
+      "address": "0xb2ebb3c75b790218346dde744fef221487a470b7",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 269,
+      "address": "0xdb2cf4729109604f974cebeecaeeea9655b13725",
+      "cumulativePoints": "5000000000000000000",
+      "totalAllocation": "5000000000000000000"
+    },
+    {
+      "rank": 270,
+      "address": "0xf689bb846ee7dd51947c3368cc3ee26713d3ed83",
+      "cumulativePoints": "3036114187778930941",
+      "totalAllocation": "3036114187778930941"
+    },
+    {
+      "rank": 271,
+      "address": "0xdec4e9f46f9a4f7af7ccb62c1512b086fa054829",
+      "cumulativePoints": "319889100000000000",
+      "totalAllocation": "319889100000000000"
+    },
+    {
+      "rank": 272,
+      "address": "0x827681a3a315c0865463e238013c6a631ffdfab9",
+      "cumulativePoints": "304210900000000000",
+      "totalAllocation": "304210900000000000"
+    },
+    {
+      "rank": 273,
+      "address": "0x3607b0a442efbcc3c7a216f8ecaca01fd0c13bee",
+      "cumulativePoints": "8691740000000000",
+      "totalAllocation": "8691740000000000"
+    },
+    {
+      "rank": 274,
+      "address": "0xd3e956e24157d64aca554ec644d377826fe12d77",
+      "cumulativePoints": "2334816725539",
+      "totalAllocation": "2334816725539"
+    },
+    {
+      "rank": 275,
+      "address": "0x3d4207175681997b89709672241a63edacbc38a7",
+      "cumulativePoints": "1003421041255",
+      "totalAllocation": "1003421041255"
+    }
+  ]
+}

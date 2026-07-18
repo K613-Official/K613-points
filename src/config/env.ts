@@ -1,4 +1,5 @@
 import { cleanEnv as envalidCleanEnv, url, str, num, makeValidator } from 'envalid';
+import { getAddress } from 'viem';
 
 export const DEFAULT_SUBGRAPH_URL =
   'https://api.studio.thegraph.com/query/1748605/k-613-prod/version/latest';
@@ -7,13 +8,17 @@ export const DEFAULT_SUBGRAPH_URL =
 export const DEFAULT_AAVE_ORACLE_ADDRESS = '0x0dFfb00A751a74ac8CF8B022Bf86b1ECd9D7ae6F';
 
 const hexAddressOrEmpty = makeValidator<`0x${string}` | ''>((x: string) => {
-  if (!x) {
+  const trimmed = x.trim();
+  if (!trimmed) {
     return '';
   }
-  if (!/^0x[a-fA-F0-9]{40}$/iu.test(x)) {
+  if (!/^0x[a-fA-F0-9]{40}$/iu.test(trimmed)) {
     throw new Error('must be 0x-prefixed 40 hex chars (20 bytes)');
   }
-  return x as `0x${string}`;
+  // Normalize to EIP-55. viem rejects a mixed-case address whose checksum does
+  // not match, so accepting any casing here and checksumming once keeps a
+  // hand-copied address from failing deep inside a contract read.
+  return getAddress(trimmed);
 });
 
 const hexPrivateKeyOrEmpty = makeValidator<`0x${string}` | ''>((x: string) => {

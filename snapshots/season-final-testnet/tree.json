@@ -1,0 +1,90 @@
+{
+  "finalRoot": "0x3ba84854695d9959fe8658e4abe356b4341dbbe4daeaca841f13e86af212b281",
+  "totalK613ToFund": "10156961292685759420857",
+  "throughWeek": 3,
+  "allocationBasis": "entitlement-cumulative-weekly-points",
+  "conversionRatio": "1:1",
+  "leafEncoding": "StandardMerkleTree([\"address\",\"uint256\"])",
+  "leaves": 7,
+  "finalizedAt": "2026-07-18T19:44:10.630Z",
+  "onchain": {
+    "distributorRoot": "0x3ba84854695d9959fe8658e4abe356b4341dbbe4daeaca841f13e86af212b281",
+    "distributorCumulativeSupply": "10156961292685759420857",
+    "k613s1TotalSupply": "9046558889869013184476",
+    "unclaimed": "1110402402816746236381",
+    "rootMatchesDistributor": true
+  },
+  "tree": {
+    "format": "standard-v1",
+    "leafEncoding": [
+      "address",
+      "uint256"
+    ],
+    "tree": [
+      "0x3ba84854695d9959fe8658e4abe356b4341dbbe4daeaca841f13e86af212b281",
+      "0xf0230d8081a6c7a8b3dad65698798291157db0c02080e81491e33a004d0524a5",
+      "0xfa69b4593caa377af31f8fd5dfbf81bf031ae247aff8001a423efb763434dab3",
+      "0x8dc590feafa0fc8b89622f2e01f1d6ae3da2ad819cc6a1270ce61063e0ad6685",
+      "0x048462b555831e7321f22d81d12e869390ae704db040b9638633bf8148877d94",
+      "0x3cea3633ff9b8b0c8b599e6f18c52d521cd8fc7ce20bbe7625388a6d8158c9fc",
+      "0xd6da9d3c78e0b2d51c630678b28a8d8c778123aa54543094885587358dd54433",
+      "0xbfef8a8a3e4a3bbe26fa8aa3a8baa5e9fcb00e3f37eb364102f57abdeb7165ab",
+      "0x940bf1435e1c3ee6c5ea6f3b5c361faab0c4df89096869a5330e6c53c4b31c5e",
+      "0x41cfa3b8c01ba1029159e64baa3477604119e88755bac6b194ed046da1ddc140",
+      "0x1a161a5f683f5f33428c489e1e8a7b544872a7385c31632a8631112d3b206643",
+      "0x07b3e248476504a47ceada3a7c45e0fd22c42f8403947db923853ac4a05c919c",
+      "0x067649624777ec2a9fa48d2de6886997f455670350cb78ba573cea7374f5df26"
+    ],
+    "values": [
+      {
+        "value": [
+          "0x414afe25b83eb7b46cd554e5c96e7017052295d1",
+          "599835582000000000"
+        ],
+        "treeIndex": 6
+      },
+      {
+        "value": [
+          "0x520932596eb8836ec5779946ff520350129c2f4d",
+          "196399220532395987736"
+        ],
+        "treeIndex": 11
+      },
+      {
+        "value": [
+          "0x777905a8a5913d5cf46104d9e97eb4117e279958",
+          "8678638235601063104476"
+        ],
+        "treeIndex": 9
+      },
+      {
+        "value": [
+          "0x8f5a941fee1d7715952ee033d1e1cc49a89df197",
+          "300184874421320000000"
+        ],
+        "treeIndex": 8
+      },
+      {
+        "value": [
+          "0xb2d6c4c8ef8dd874bb12a88944a223acb5e0c6ca",
+          "29992940800000000000"
+        ],
+        "treeIndex": 12
+      },
+      {
+        "value": [
+          "0xdec4e9f46f9a4f7af7ccb62c1512b086fa054829",
+          "367920654267950080000"
+        ],
+        "treeIndex": 10
+      },
+      {
+        "value": [
+          "0xed94d9db6581c59de3875541c533f821c7228c3a",
+          "583225531481030248645"
+        ],
+        "treeIndex": 7
+      }
+    ]
+  }
+}

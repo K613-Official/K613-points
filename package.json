@@ -13,6 +13,7 @@
     "preinstall": "npx -y only-allow pnpm",
     "snapshot": "tsx src/commands/snapshot.ts",
     "build-tree": "tsx src/commands/build-tree.ts",
+    "build-season-tree": "tsx src/commands/build-season-tree.ts",
     "dry-run": "tsx src/commands/dry-run.ts",
     "post-root": "tsx src/commands/post-root.ts",
     "verify": "tsx src/commands/verify.ts",
